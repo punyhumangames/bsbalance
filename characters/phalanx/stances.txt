@@ -1,0 +1,84 @@
+Stances
+{
+	"phalanx.fast"
+	{
+		"extends"	"reverse"
+
+		"speed"		"1.0" // run speed modifier
+		"damage"	"5"
+		"kb"		"0.06"
+		"rotationspeed"		"100"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"PhalanxFastLeft" // left attack action name
+		"right"	"PhalanxFastRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "PhalanxFastString1"
+			"action" "PhalanxFastString2"
+			"action" "PhalanxFastString3"
+			"action" "PhalanxFastString4"
+		}
+		
+		"icon"		"vgui/stances/phalanx_reverse"
+		"facingright" 	"0"
+	}
+	
+	"phalanx.balanced"
+	{
+		"extends"	"balanced"
+		
+		"icon"		"vgui/stances/phalanx_balanced"
+		"rotationspeed"		"80"
+		
+		"kb"		"0.09"
+		
+		"left"	"PhalanxBalancedLeft" // left attack action name
+		"right"	"PhalanxBalancedRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "PhalanxBalancedString1"
+			"action" "PhalanxBalancedString2"
+		}
+		"facingright" 	"1"
+	}
+
+	"phalanx.heavy"
+	{
+		"extends"	"heavy"
+		
+		"rotationspeed"		"150"
+		"damage"	"15"
+		"kb"		"0.15"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"PhalanxHeavyLeft" // left attack action name
+		"right"	"PhalanxHeavyRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "PhalanxHeavyString1"
+		}
+		
+		"icon"		"vgui/stances/phalanx_heavy"
+		"facingright" 	"1"
+	}	
+
+	"phalanx.air"
+	{
+		"extends"	"air"
+		
+		"kb"		"0.1"
+		"rotationspeed"		"100"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"PhalanxAirLeft" // left attack action name
+		"right"	"PhalanxAirRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "PhalanxAirString1"
+		}
+		
+		"icon"		"vgui/stances/phalanx_air"
+		"facingright" 	"1"
+	}
+}

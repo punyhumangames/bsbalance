@@ -1,0 +1,550 @@
+Actions
+{
+////////////////////////////////////////////////////////////////////
+// kneeling
+////////////////////////////////////////////////////////////////////
+
+  "KneelingFalling"
+  {
+    "factoryclass"      "kneelingfalling"
+    "animation"         "ACT_BB_GROUND_HIT"
+    "move_lock"         "1"
+    "animation_move"    "0"
+    "rotation_lock"     "1"
+    "lock_duration"     "0.4"
+  }
+
+  "KneelRoll"
+  {
+    "factoryclass"      "kneelroll"
+    "animation"
+    {
+      "Forward"     "ACT_BB_RECOVER_FORWARD"
+      "Right"       "ACT_BB_RECOVER_RIGHT"
+      "Back"        "ACT_BB_RECOVER_BACK"
+      "Left"        "ACT_BB_RECOVER_LEFT"
+    }
+    "move_lock"         "1"
+    "animation_move"    "1"
+    "rotation_lock"     "0"
+  }
+
+  "KneelingRecover"
+  {
+    "factoryclass"      "move"
+    "animation"         "ACT_BB_KNEELING_RECOVER"
+    "move_lock"         "1"
+    "animation_move"    "1"
+    "rotation_lock"     "1"
+    "lock_duration"     "0.6"
+  }
+
+  "RecoveryAttack"
+  {
+    "factoryclass"            "recoveryattack"
+
+    "reaction"                "ACT_BB_H_REACTION_UPPER"
+
+    "move_lock"               "1"
+    "animation_move"          "1"
+    "rotation_lock"           "0"
+    "rotation_speed"          "800"
+    "rotation_speed_duration" "-1" //defaults to locktime of action if < 0
+    "knockback_scale"         "0.5"
+
+    "tier3"
+    {
+      "animation"             "ACT_BB_RECOVERY_ATTACK"
+      "move_lock"             "1"
+      "lock_duration"         "1.00"
+      "damage"                "30"
+    }
+  }
+
+  "KneelParry"
+  {
+    "factoryclass"      "kneelparry"
+    "animation"
+    {
+      "forward"       "ACT_BB_INTERCEPT"
+    }
+    "parry_window"      "0.4"
+    "move_lock"         "1"
+    "lock_duration"     "0.8"
+    "animation_move"    "1"
+    "rotation_speed"    "800"
+    "move_scale"        "0.65"
+  }
+
+
+  "Grab"
+  {
+    "factoryclass"        "grab"
+    "animation"           "ACT_BB_GRAB"
+    "move_lock"           "1"
+    "animation_move"      "1"
+    "lock_duration"       "1.0"
+    "rotation_lock"       "1"
+    "move_softcollision"  "0"
+  }
+
+  "GrabDeflect"
+  {
+    "factoryclass"      "move"
+    "animation"         "ACT_BB_GRAB_DEFLECT"
+    "move_lock"         "1"
+    "animation_move"    "1"
+    "lock_duration"     "1.0"
+    "rotation_lock"     "1"
+  }
+
+  "Thrown"
+  {
+    "factoryclass"        "thrown"
+    "animation"           "ACT_BB_THROW_REACTION"
+    "move_lock"           "1"
+    "animation_move"      "1"
+    "air_move"            "1"
+    "rotation_lock"       "1"
+    "move_softcollision"  "0"
+  }
+
+  //  interrupt acts as a dummy, animations get filled in by other actions
+  "Interrupt"
+  {
+    "factoryclass"      "interrupt"
+    "animation"         "ACT_BB_REACTION_UPPER"
+    "move_lock"         "1"
+    "animation_move"    "0"
+  }
+
+  "InterruptUpper"
+  {
+    "factoryclass"      "interrupt"
+    "move_lock"         "0"
+    "animation_move"    "0"
+    "action_upperbody"  "1"
+    "jump"              "0"
+  }
+
+  "AirInterrupt"
+  {
+    "factoryclass"              "interrupt"
+    "animation"                 "ACT_BB_AIR_STUNNED"
+    "landing"                   "ACT_BB_LAND_RIGHT"
+    "move_lock"                 "1"
+    "animation_move"            "1"
+    "air_move"                  "1"
+    "move_scale"                "0.4"
+    "rotation_lock"             "1"
+    "animation_move_duration"   "0.1"
+  }
+
+  "HitReactionWeak"
+  {
+    "factoryclass"      "interrupt"
+    "move_lock"         "0"
+    "animation_move"    "0"
+    "runspeedscale"     "0.75"
+    "action_upperbody"  "1"
+    "rotation_lock"     "1"
+    "jump"              "1"
+  }
+
+  "HitReactionStrong"
+  {
+    "factoryclass"      "interrupt"
+    "move_lock"         "0"
+    "animation_move"    "0"
+    "rotation_lock"     "1"
+    "runspeedscale"     "0.8"
+  }
+
+  "Parried"
+  {
+    "factoryclass"        "interrupt"
+    "animation_lowerbody" "ACT_BB_PARRY_STUMBLE"
+    "animation"           "ACT_BB_PARRY_UPPER"
+    //"action_upperbody"  "1"
+    "move_lock"           "1"
+    "animation_move"      "0"
+  }
+
+  "ParriedAir"
+  {
+    "factoryclass"      "interrupt"
+    "animation"         "ACT_BB_PARRIED_AIR"
+    "move_lock"         "1"
+    "animation_move"    "1"
+    "air_move"          "1"
+  }
+
+  "Fall"
+  {
+    "factoryclass"      "fall"
+    "animation"
+    {
+      "falling"     "ACT_BB_FALLING"
+      "land"        "ACT_BB_GROUND_HIT"
+    }
+    "move_lock"         "1"
+    "animation_move"    "0"
+    "rotation_lock"     "1"
+  }
+
+  "Block"
+  {
+    "factoryclass"      "block"
+    "animation"
+    {
+      "left"        "ACT_BB_BLOCK_LEFT"
+      "right"       "ACT_BB_BLOCK_RIGHT"
+    }
+    "move_lock"         "1"
+    "rotation_lock"     "1"
+    "animation_move"    "0"
+    "lock_duration"     "0.25"
+  }
+
+  "Parry"
+  {
+    "factoryclass"      "parry"
+    "animation"
+    {
+      "forward"       "ACT_BB_INTERCEPT"
+    }
+    "parry_window"      "0.4"
+    "move_lock"         "1"
+    "lock_duration"     "0.8"
+    "animation_move"    "1"
+    "rotation_lock"     "1"
+    "move_scale"        "0.65"
+  }
+
+  "Feint"
+  {
+    "factoryclass"      "feint"
+    "animation"
+    {
+      "forward"       "ACT_BB_H_C1_T1"
+      "left"          "ACT_BB_H_LEFT_T1"
+      "right"         "ACT_BB_H_RIGHT_T1"
+    }
+    "move_lock"         "1"
+    "animation_move"    "1"
+  }
+
+  "Kick"
+  {
+    "factoryclass"      "kick"
+    "animation"         "ACT_BB_KICK"
+    "move_lock"         "1"
+    "animation_move"    "1"
+  }
+
+  "Guard"
+  {
+    "factoryclass"        "guard"
+    "runspeedscale"       "0.55" // matches walk side anim
+    "action_upperbody"    "1"
+    "animation_pitchaim"  "1"
+    "animation_lowerbody" "ACT_WALK_SIDE"
+    "lock_duration"       "0.4"
+    "animation_looping"   "1"
+  }
+
+  "Kill"
+  {
+    "factoryclass"        "kill"
+    "animation1"          "ACT_BB_BELLY_SLICE"
+    "animation2"          "ACT_BB_BELLY_SLICE_SIDE"
+    "animation3"          "ACT_BB_NECK_SLICE"
+    "animation4"          "ACT_BB_SPINNING_FACEPLANT"
+    "move_lock"           "1"
+    "animation_move"      "1"
+    "rotation_lock"       "1"
+    "move_softcollision"  "0"
+  }
+
+////////////////////////////////////////////////////////////////////
+// gestures
+////////////////////////////////////////////////////////////////////
+  "Bow"
+  {
+    "factoryclass"      "baseaction"
+    "animation"         "ACT_BB_BOW1"
+    "move_lock"         "1"
+    "animation_move"    "0"
+    "rotation_lock"     "1"
+  }
+  "Flourish"
+  {
+    "factoryclass"              "taunt"
+    "animation_balanced"        "ACT_BB_B_FLOURISH"
+    "animation_heavy"           "ACT_BB_H_FLOURISH"
+    "animation_reverse"         "ACT_BB_R_FLOURISH"
+    "animation_air"             "ACT_BB_B_FLOURISH"
+    "move_lock"                 "1"
+    "animation_move"            "0"
+    "rotation_lock"             "1"
+  }
+  "Taunt"
+  {
+    "factoryclass"              "taunt"
+    "animation_balanced"        "ACT_BB_B_TAUNT"
+    "animation_heavy"           "ACT_BB_H_TAUNT"
+    "animation_reverse"         "ACT_BB_R_TAUNT"
+    "animation_air"             "ACT_BB_B_TAUNT"
+    "move_lock"                 "1"
+    "animation_move"            "0"
+    "rotation_lock"             "1"
+    "allow_sheathed"            "1"
+  }
+  "Sit"
+  {
+    "factoryclass"      "sit"
+    "animation"         "ACT_BB_SIT_DOWN"
+    "sit_up"            "ACT_BB_SIT_UP"
+    "move_lock"         "1"
+    "rotation_lock"     "1"
+    "animation_move"    "1"
+  }
+
+////////////////////////////////////////////////////////////////////
+// movement
+////////////////////////////////////////////////////////////////////
+  "Roll"
+  {
+    "factoryclass"      "move"
+    "animation" // animation activity for each direction
+    {
+      "Forward"     "ACT_BB_EVADE_N"
+      "Right"       "ACT_BB_EVADE_E"
+      "Back"        "ACT_BB_EVADE_S"
+      "Left"        "ACT_BB_EVADE_W"
+    }
+    "move_lock"         "1"
+    "move_scale"        "0.8"
+    "animation_move"    "1"
+    "lock_duration"     "0.7"
+    "should_look_at"    "0"
+  }
+
+  "Shuffle"
+  {
+    "factoryclass"      "move"
+    "animation" // animation activity for each direction
+    {
+      "Forward"     "ACT_BB_B_SHUFFLE_FORWARD"
+      "Right"       "ACT_BB_B_SHUFFLE_RIGHT"
+      "Back"        "ACT_BB_B_SHUFFLE_BACK"
+      "Left"        "ACT_BB_B_SHUFFLE_LEFT"
+    }
+    "move_lock"         "1"
+    "move_scale"        "1.0"
+    "animation_move"    "1"
+    "lock_duration"     "0.4"
+  }
+
+  "AirDash"
+  {
+    "factoryclass"      "airdash"
+    "animation"         "ACT_BB_DASH_N"
+    "move_lock"         "1"
+    "move_scale"        "2"
+    "animation_move"    "1"
+    "lock_duration"     "0.2"
+    "air_move"          "1"
+  }
+
+////////////////////////////////////////////////////////////////////
+// wall flips
+////////////////////////////////////////////////////////////////////
+  "WallFlip"
+  {
+    "factoryclass"            "wallflip"
+    "animation"               "ACT_BB_WALLFLIP"
+
+    "move_scale"              "2"
+    "animation_move"          "1"
+    "animation_move_duration" "0.3"
+
+    "air_move"                "1"
+  }
+
+  "WallFlipSmall"
+  {
+    "factoryclass"            "wallflip"
+    "animation"               "ACT_BB_WALLFLIP"
+
+    "move_scale"              "1"
+    "animation_move"          "1"
+    "animation_move_duration" "0.12"
+
+    "air_move"                "1"
+  }
+
+  "WallRun"
+  {
+    "factoryclass"      "wallrun"
+    "animation"         "ACT_BB_WALLRUN"
+
+    "move_lock"         "1"
+    "move_scale"        "1"
+    "animation_move"    "1"
+    "air_move"          "1"
+    "rotation_lock"     "1"
+  }
+
+  "WallClimb"
+  {
+    "factoryclass"        "climb"
+    "animation"           "ACT_BB_LEDGEGRAB"
+
+    "move_lock"           "1"
+    "move_scale"          "1"
+    "move_softcollision"  "0"
+
+    "animation_move"      "1"
+    "air_move"            "1"
+    "noclip_move"         "1"
+    "rotation_lock"       "1"
+  }
+
+  "Vault"
+  {
+    "factoryclass"        "climb"
+    "animation"           "ACT_BB_VAULT"
+
+    "move_lock"           "1"
+    "move_softcollision"  "0"
+
+    "animation_move"      "1"
+
+    "noclip_move"         "1"
+    "rotation_lock"       "1"
+  }
+
+////////////////////////////////////////////////////////////////////
+// throwable weapons
+////////////////////////////////////////////////////////////////////
+
+  "ThrowWeapon"
+  {
+    "factoryclass"        "throwweapon"
+    "animation"           "ACT_BB_THROW_STAR"
+    "reaction"            "ACT_HIT_UPPER"
+    "normal_block"        "ACT_BB_BLOCK_THROWABLE"
+    //"lock_duration"     "1.2"
+
+    "move_lock"           "1"
+    "move_scale"          "1"
+
+    "animation_move"      "1"
+    "animation_pitchaim"  "1"
+
+    "should_look_at"      "0"
+  }
+
+  "AutoBlockThrowable"
+  {
+    "factoryclass"        "interrupt"
+    "move_lock"           "0"
+    "animation_move"      "0"
+    //"runspeedscale"     "0.5"
+    "action_upperbody"    "1"
+  }
+
+////////////////////////////////////////////////////////////////////
+// misc
+////////////////////////////////////////////////////////////////////
+
+  "SprayPaintImage"
+  {
+    "factoryclass"         "spraypaint"
+    "animation"           "ACT_BB_SPRAY"
+
+    "move_lock"           "1"
+    "move_scale"          "1"
+
+    "animation_move"      "1"
+    "animation_pitchaim"  "1"
+  }
+
+////////////////////////////////////////////////////////////////////
+// blocks (deprecated)
+////////////////////////////////////////////////////////////////////
+  "BalancedBlock"
+  {
+    "factoryclass"          "block"
+    "animation"
+    {
+      "Forward"     "ACT_BB_B_BLOCK"
+      "Right"       "ACT_BB_B_BLOCK_RIGHT"
+      "Left"        "ACT_BB_B_BLOCK_LEFT"
+    }
+    "move_lock"             "1"
+
+    //  forward block reactions
+    "block_normal"          "ACT_BB_B_BLOCK_BLOCKED"      //  forward block vs forward attack
+
+    "block_weak_left"       "ACT_BB_B_BLOCK_WEAK_LEFT"      //  forward block vs left attack
+    "block_weak_right"      "ACT_BB_B_BLOCK_WEAK_RIGHT"     //  forward block vs right attack
+
+    "block_left_weak"       "ACT_BB_B_BLOCK_LEFT_WEAK"      //  left block vs forward attack
+    "block_right_weak"      "ACT_BB_B_BLOCK_RIGHT_WEAK"     //  right block vs forward attack
+
+    "block_forward_riposte" "ACT_BB_B_BLOCK_FORWARD_RIPOSTE"  //  forward block vs forward attack
+    "block_left_riposte"    "ACT_BB_B_BLOCK_LEFT_RIPOSTE"   //  left block vs left attack
+    "block_right_riposte"   "ACT_BB_B_BLOCK_RIGHT_RIPOSTE"    //  right block vs left attack
+  }
+
+  "ReverseBlock"
+  {
+    "factoryclass"          "block"
+    "animation"
+    {
+      "Forward"     "ACT_BB_R_BLOCK"
+      "Right"       "ACT_BB_R_BLOCK_RIGHT"
+      "Left"        "ACT_BB_R_BLOCK_LEFT"
+    }
+    "move_lock"             "1"
+
+    //  forward block reactions
+    "block_normal"          "ACT_BB_B_BLOCK_BLOCKED"      //  forward block vs forward attack
+
+    "block_weak_left"       "ACT_BB_B_BLOCK_WEAK_LEFT"      //  forward block vs left attack
+    "block_weak_right"      "ACT_BB_B_BLOCK_WEAK_RIGHT"     //  forward block vs right attack
+
+    "block_left_weak"       "ACT_BB_B_BLOCK_LEFT_WEAK"      //  left block vs forward attack
+    "block_right_weak"      "ACT_BB_B_BLOCK_RIGHT_WEAK"     //  right block vs forward attack
+
+    "block_forward_riposte" "ACT_BB_B_BLOCK_FORWARD_RIPOSTE"  //  forward block vs forward attack
+    "block_left_riposte"    "ACT_BB_B_BLOCK_LEFT_RIPOSTE"   //  left block vs left attack
+    "block_right_riposte"   "ACT_BB_B_BLOCK_RIGHT_RIPOSTE"    //  right block vs left attack
+  }
+
+  "HeavyBlock"
+  {
+    "factoryclass"          "block"
+    "animation"
+    {
+      "Forward"     "ACT_BB_H_BLOCK"
+      "Right"       "ACT_BB_H_BLOCK_RIGHT"
+      "Left"        "ACT_BB_H_BLOCK_LEFT"
+    }
+    "move_lock"             "1"
+    "block_normal"          "ACT_BB_B_BLOCK_BLOCKED"
+
+    "block_weak_left"       "ACT_BB_B_BLOCK_WEAK_LEFT"      //  forward block vs left attack
+    "block_weak_right"      "ACT_BB_B_BLOCK_WEAK_RIGHT"     //  forward block vs right attack
+
+    "block_left_weak"       "ACT_BB_B_BLOCK_LEFT_WEAK"      //  left block vs forward attack
+    "block_right_weak"      "ACT_BB_B_BLOCK_RIGHT_WEAK"     //  right block vs forward attack
+
+    "block_forward_riposte" "ACT_BB_B_BLOCK_FORWARD_RIPOSTE"  //  forward block vs forward attack
+    "block_left_riposte"    "ACT_BB_B_BLOCK_LEFT_RIPOSTE"   //  left block vs left attack
+    "block_right_riposte"   "ACT_BB_B_BLOCK_RIGHT_RIPOSTE"    //  right block vs left attack
+  }
+
+}

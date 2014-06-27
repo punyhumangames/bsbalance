@@ -1,0 +1,175 @@
+////////////////////////////////////////////////////////////////////
+// phalanx air attacks
+////////////////////////////////////////////////////////////////////
+
+Actions
+{
+	"PhalanxAirBase"
+	{
+		"factoryclass"					"attack"
+		"move_lock"						"1" // movement lock; valid values are 0, false, 1, true
+		"animation_move"				"1"
+		"air_move"						"1"
+		"rotation_lock"					"0"
+		"landing"						"ACT_BB_LAND_LEFT"
+		"reaction"						"ACT_BB_STUMBLE"
+		"reaction_layer"				"ACT_HIT_UPPER"
+
+		"tier1"
+		{
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true
+			"damage"			"24"									// damage per hit
+		}
+		"tier2"
+		{
+			"move_lock"			"1"
+			"damage"			"28"
+		}
+		"tier3"
+		{
+			"move_lock"			"1"
+			"damage"			"32"
+		}
+	}
+
+	"PhalanxAirString1"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxAirBase"
+		"charge_animation"				"ACT_BB_R_C1_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING"
+		"landing"						"ACT_BB_LAND_RIGHT"
+		"move_lock"									"1"
+		"animation_move"						"1"
+		"air_move"									"1"
+		"rotation_lock"							"0"
+		"move_scale"								"1.0"
+		"animation_move_duration"		"0.35"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_A_C1_T1"						// attack animation activity
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true
+			"land_lock_duration"	"0.5"
+			"lock_duration"		"1.0" 									// can override "lock_duration" above
+			"damage"			"20"										// damage per hit
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_C1_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"0.6"
+			"damage"			"24"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_C1_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"1.0"
+			"damage"			"30"
+		}
+	}
+
+	"PhalanxAirString2"
+	{
+		"factoryclass"					"attack"
+		"extends"				"PhalanxAirBase"
+		"charge_animation"				"ACT_BB_R_C2_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING"
+		"landing"						"ACT_BB_LAND_RIGHTFOOTFORWARD"
+		"animation_move_duration"		"0.7"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_A_C2_T1"
+			"lock_duration"		"1.00"
+			"damage"			"12"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_C2_T1"
+			"lock_duration"		"1.00"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_C2_T1"
+			"lock_duration"		"1.00"
+			"damage"			"20"
+		}
+	}
+
+	"PhalanxAirLeft"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PhalanxAirBase"
+		"charge_animation"				"ACT_BB_R_C2_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING"
+		"landing"						"ACT_BB_LAND_LEFT"
+		"move_lock"						"1"
+		"animation_move"				"1"
+		"air_move"						"1"
+		"rotation_lock"					"0"
+		"move_scale"					"1.0"
+		"animation_move_duration"		"0.35"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"0.5"
+			"damage"			"12"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"0.6"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"1.00"
+			"damage"			"20"
+		}
+	}
+
+
+	"PhalanxAirRight"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PhalanxAirBase"
+		"charge_animation"				"ACT_BB_R_C2_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING"
+		"landing"						"ACT_BB_LAND_RIGHT"
+		"move_lock"						"1"
+		"animation_move"				"1"
+		"air_move"						"1"
+		"move_scale"					"1.0"
+		"animation_move_duration"		"0.4"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"0.65"
+			"damage"			"12"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"0.75"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"lock_duration"		"1.00"
+			"land_lock_duration"	"1.00"
+			"damage"			"20"
+		}
+	}
+}

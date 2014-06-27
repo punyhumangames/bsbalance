@@ -1,0 +1,139 @@
+////////////////////////////////////////////////////////////////////
+// pure air attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"PureAirBase"
+	{
+		"factoryclass"					"attack"
+		"move_lock"						"0" // movement lock; valid values are 0, false, 1, true
+		"animation_move"				"1"
+		"air_move"						"1"
+		"rotation_lock"					"0"
+		"landing"						"ACT_BB_LAND_LEFT"
+		"reaction"						"ACT_BB_STUMBLE"
+		"reaction_layer"				"ACT_HIT_UPPER"				
+
+		"tier1"
+		{		
+			"move_lock"			"1"	
+			"damage"			"16"
+		}
+		"tier2"
+		{
+			"move_lock"			"1"
+			"damage"			"18"
+		}
+		"tier3"
+		{
+			"move_lock"			"1"																	
+			"damage"			"20"								
+		}
+	}
+	
+	"PureAirString1"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PureAirBase"		
+		"charge_animation"				"ACT_BB_R_C1_CHARGE" 
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" 
+		"animation_move_duration"		"0.3"
+				
+		"tier1"
+		{		
+			"animation"					"ACT_BB_A_C1_T1"
+			"land_lock_duration"		"0.3"			
+			"lock_duration"				"0.7" 	
+			"move_lock"					"1"								
+		}
+
+		"tier2"
+		{		
+			"animation"					"ACT_BB_A_C1_T1"
+			"land_lock_duration"		"0.3"			
+			"lock_duration"				"0.7" 	
+			"move_lock"					"1"								
+		}	
+		
+		"tier3"
+		{		
+			"animation"					"ACT_BB_A_C1_T1"
+			"land_lock_duration"		"0.3"			
+			"lock_duration"				"0.7" 	
+			"move_lock"					"1"									
+		}				
+	}
+
+	"PureAirLeft"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PureAirBase"		
+		"charge_animation"				"ACT_BB_B_LEFT_CHARGE_RUNNING" 
+		"charge_animation_run"			"ACT_BB_B_LEFT_CHARGE_RUNNING" 
+		"animation_move_duration"		"0.3"
+
+		"tier1"
+		{		
+			"animation"					"ACT_BB_A_LEFT_T1"
+			"land_lock_duration"		"0.4"			
+			"lock_duration"				"0.9" 	
+			"move_lock"					"1"	
+			"move_scale"				"0.8"							
+		}
+
+		"tier2"
+		{		
+			"animation"					"ACT_BB_A_LEFT_T1"
+			"land_lock_duration"		"0.4"			
+			"lock_duration"				"0.9" 	
+			"move_lock"					"1"
+			"move_scale"				"0.8"								
+		}		
+
+		"tier3"
+		{		
+			"animation"					"ACT_BB_A_LEFT_T1"
+			"land_lock_duration"		"0.4"			
+			"lock_duration"				"0.9" 	
+			"move_lock"					"1"
+			"move_scale"				"0.8"							
+		}			
+	}	
+
+	"PureAirRight"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PureAirBase"		
+		"charge_animation"				"ACT_BB_R_RIGHT_CHARGE_RUNNING" 
+		"charge_animation_run"			"ACT_BB_R_RIGHT_CHARGE_RUNNING" 
+		"animation_move_duration"		"0.3"		
+				
+		"tier1"
+		{		
+			"animation"					"ACT_BB_A_RIGHT_T1"
+			"land_lock_duration"		"0.4"			
+			"lock_duration"				"0.9" 	
+			"move_lock"					"1"
+			"move_scale"				"0.8"								
+		}
+
+		"tier2"
+		{		
+			"animation"					"ACT_BB_A_RIGHT_T1"
+			"land_lock_duration"		"0.4"			
+			"lock_duration"				"0.9"  	
+			"move_lock"					"1"
+			"move_scale"				"0.8"								
+		}	
+
+		"tier3"
+		{		
+			"animation"					"ACT_BB_A_RIGHT_T1"
+			"land_lock_duration"		"0.4"			
+			"lock_duration"				"0.9" 	
+			"move_lock"					"1"
+			"move_scale"				"0.8"								
+		}				
+	}		
+}

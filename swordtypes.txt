@@ -1,0 +1,210 @@
+"swordtypes"
+{
+  "default"
+  {
+    "printname"                         "bb_swordtype_default"
+    "printname_long"                    "bb_swordtype_default_alt"
+    "info"                              "bb_swordtypeinfo_default"
+    "icon"                              "vgui\swordtypes\swordtype_default"
+    "icon_big"                          "vgui\swordtypes\swordtype_default_big"
+
+    "blockTech"                         "block"
+    "damageX"                           "1.0" //overall damage multiplier
+    "balanceddamageX"                   "1.0"
+    "heavydamageX"                      "1.0"
+    "fastdamageX"                       "1.0"
+    "airdamageX"                        "1.0"
+    "damagedotproductx"                 "0.0"
+    "forwardAttackDamageX"              "1.0"
+    "sideAttackDamageX"                 "1.0"
+    "thrustDamageX"                     "1.0"
+    "parryDamageX"                      "1.0"
+    "multihitRateForwardX"              "1.0"
+    "multihitRateSideX"                 "1.0"
+    "multihitMinDamage"                 "1"
+    "mindamagetier1"                    "0"
+    "mindamagetier2"                    "0"
+    "mindamagetier3"                    "0"
+    "interceptTurnSelfX"                "1.0" //how much to turn yourself, multiplied by bb_turnanimation_parry_angle and opponent's interceptTurnOpponentX
+    "interceptTurnOpponentX"            "1.0" //how much to turn opponent, multiplied by bb_turnanimation_parry_angle and opponent's interceptTurnSelfX
+    "interceptRecoveryX"                "1.0" //how long a tracer parry recovery takes, multiplied by bb_recovery_tier_worse/normal/better
+    "interceptForwardRecoveryX"         "1.0" //as above, but another multiplier for forward attacks
+    "interceptSideRecoveryX"            "1.0" //as above, but for side attacks
+    "knockbackX"                        "1.0"
+    "recoveryBonusOnHit"                "0.0" //how much time to shave off of an attack's lock timer if you land the hit
+    "tier3shouldknockdown"              "1"
+    "tier3shouldbreakblock"             "1"
+    "tier3shouldbreakparry"             "1"
+    "chargetime"                        "1.0" //how much to multiply bb_charge_tier#_time variables by
+    "chargerunx"                        "1.0" //how much bonus for charge run
+    "multihitscale"                     "0.25" //how much to scale attack damage down to each multi-hit
+    "cansidecancel"                     "1"
+    "canstancecancel"                   "0"
+    "canhitinterrupt"                   "1"
+    "interruptx"                        "1"
+
+    "soundhitfast"                      "Weapon_Blade.Light_Hit"
+    "soundhitbalanced"                  "Weapon_Blade.Balanced_Hit"
+    "soundhitheavy"                     "Weapon_Blade.Heavy_Hit"
+    "soundunblockable"                  "Weapon_Blade.Penetrated"
+    "soundblocked"                      "Weapon_Blade.Blocked"
+    "sounddefensiveparry"               "Weapon_Blade.Blocked"
+    "soundswooshfast"                   "Weapon_Blade.Reverse"
+    "soundswooshbalanced"               "Weapon_Blade.Balanced"
+    "soundswooshheavy"                  "Weapon_Blade.Heavy"
+  }
+
+  "longsword"
+  {
+    "extends"                           "default"
+    "printname"                         "bb_swordtype_longsword"
+    "printname_long"                    "bb_swordtype_longsword_alt"
+    "info"                              "bb_swordtypeinfo_longsword"
+    "icon"                              "vgui\swordtypes\swordtype_longsword"
+    "icon_big"                          "vgui\swordtypes\swordtype_longsword_big"
+
+    "blockTech"                         "block"
+
+    "forwardAttackDamageX"              "0.80"
+    "sideAttackDamageX"                 "0.90"
+
+    "multihitRateForwardX"              "0.06"
+    "multihitRateSideX"                 "0.06"
+    "multihitMinDamage"                 "2"
+
+    "knockbackX"                        "1.0"
+    "interceptTurnOpponentX"            "0.0"
+
+    "soundswooshfast"                   "Longsword.Fast"
+    "soundswooshbalanced"               "Longsword.Balanced"
+    "soundswooshheavy"                  "Longsword.Heavy"
+  }
+
+  "katana"
+  {
+    "extends"                           "default"
+    "printname"                         "bb_swordtype_katana"
+    "printname_long"                    "bb_swordtype_katana_alt"
+    "info"                              "bb_swordtypeinfo_katana"
+    "icon"                              "vgui\swordtypes\swordtype_katana"
+    "icon_big"                          "vgui\swordtypes\swordtype_katana_big"
+
+    "blockTech"                         "feint"
+
+    "multihitRateForwardX"              "0.1"
+    "multihitRateSideX"                 "0.1"
+    "multihitMinDamage"                 "2"
+
+    "damageX"                           "0.8"
+
+    "parryDamageX"                      "2.0" //  1.5
+    "interceptSideRecoveryX"            "0.7" //as above, but for side attacks
+
+    "interruptx"                        "1.15"
+
+    "knockbackX"                        "1.5"
+    "interceptTurnOpponentX"            "0.0"
+
+    "chargerunx"                        "0.6"
+
+    "soundswooshfast"                   "Katana.Fast"
+    "soundswooshbalanced"               "Katana.Balanced"
+    "soundswooshheavy"                  "Katana.Heavy"
+  }
+
+  "foil"
+  {
+    "extends"                           "default"
+    "printname"                         "bb_swordtype_foil"
+    "printname_long"                    "bb_swordtype_foil_alt"
+    "info"                              "bb_swordtypeinfo_foil"
+    "icon"                              "vgui\swordtypes\swordtype_foil"
+    "icon_big"                          "vgui\swordtypes\swordtype_foil_big"
+
+    "blockTech"                         "guard"
+
+    "damagedotproductx"                 "1.4"
+    "multihitscale"                     "0.4"
+    "multihitRateForwardX"              "0.038"
+    "multihitRateSideX"                 "10.0"  //  never multihit
+
+    "forwardAttackDamageX"              "0.50"
+    "sideAttackDamageX"                 "0.6"
+
+    "interceptTurnSelfX"                "0.0"
+    "interceptTurnOpponentX"            "1.30"
+    "interceptSideRecoveryX"            "0.15"
+    "interceptForwardRecoveryX"         "1.3"
+
+    "knockbackX"                        "1.15"
+
+    "heavydamageX"                      "0.7"
+
+    "mindamagetier1"                    "4"
+    "mindamagetier2"                    "6"
+    "mindamagetier3"                    "8"
+
+    "soundswooshfast"                   "Foil.Fast"
+    "soundswooshbalanced"               "Foil.Balanced"
+    "soundswooshheavy"                  "Foil.Heavy"
+  }
+
+  "jian"
+  {
+    "extends"                           "default"
+    "printname"                         "bb_swordtype_jian"
+    "printname_long"                    "bb_swordtype_jian_alt"
+    "info"                              "bb_swordtypeinfo_jian"
+    "icon"                              "vgui\swordtypes\swordtype_jian"
+    "icon_big"                          "vgui\swordtypes\swordtype_jian_big"
+
+    "blockTech"                         "parry"
+
+    "multihitRateForwardX"              "0.12"
+    "multihitRateSideX"                 "0.12"
+    "multihitscale"                     "0.35"
+
+    "damageX"                           "0.75"
+    "airdamageX"                        "1.2"
+
+    "knockbackX"                        "1.10"
+    "interceptTurnOpponentX"            "0.25"
+    "recoveryBonusOnHit"                "0.15"
+
+    "soundswooshfast"                   "Jian.Fast"
+    "soundswooshbalanced"               "Jian.Balanced"
+    "soundswooshheavy"                  "Jian.Heavy"
+  }
+
+  "scimitar"
+  {
+    "extends"                           "default"
+    "printname"                         "bb_swordtype_scimitar"
+    "printname_long"                    "bb_swordtype_scimitar_alt"
+    "info"                              "bb_swordtypeinfo_scimitar"
+    "icon"                              "vgui\swordtypes\swordtype_scimitar"
+    "icon_big"                          "vgui\swordtypes\swordtype_scimitar_big"
+
+    "blockTech"                         "block"
+    "cansidecancel"                     "0"
+    "canstancecancel"                   "1"
+
+    "multihitscale"                     "1.0"
+    "multihitRateForwardX"              "0.12"
+    "multihitRateSideX"                 "0.038"
+
+    "multihitMinDamage"                 "2"
+
+    "forwardAttackDamageX"              "0.5"
+    "sideAttackDamageX"                 "0.4"
+
+    "tier3shouldknockdown"              "0"
+    "tier3shouldbreakblock"             "0"
+    "tier3shouldbreakparry"             "0"
+    "chargetime"                        "0.75"
+
+    "soundswooshfast"                   "Scimitar.Fast"
+    "soundswooshbalanced"               "Scimitar.Balanced"
+    "soundswooshheavy"                  "Scimitar.Heavy"
+  }
+}

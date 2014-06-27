@@ -1,0 +1,76 @@
+Stances
+{	
+	"pure.balanced"
+	{
+		"extends"		"balanced"
+		//"run_upper"	"ACT_BB_B_RUN_UPPER"
+
+		"left"	"PureBalancedLeft"
+		"right"	"PureBalancedRight" 
+		"forward"
+		{
+			"action" "PureBalancedString1"
+			"action" "PureBalancedString2"
+			"action" "PureBalancedString3"
+		}
+		
+		"icon"				"vgui/stances/pure_balanced"
+		"rotationspeed"		"500"
+		"facingright"		"1"
+	}
+
+	"pure.fast"
+	{
+		"extends"		"reverse"
+		//"run_upper"	"ACT_BB_B_RUN_UPPER"
+
+		"left"	"PureFastLeft"
+		"right"	"PureFastRight" 
+		"forward"
+		{
+			"action" "PureFastString1"
+			"action" "PureFastString2"
+			"action" "PureFastString3"
+		}
+		
+		"icon"				"vgui/stances/pure_fast"
+		"rotationspeed"		"300"
+		"facingright"		"0"
+	}
+
+	"pure.heavy"
+	{
+		"extends"		"heavy"
+		//"run_upper"	"ACT_BB_B_RUN_UPPER"
+
+		"left"	"PureHeavyLeft"
+		"right"	"PureHeavyRight" 
+		"forward"
+		{
+			"action" "PureHeavyString1"
+			"action" "PureHeavyString2"
+		}
+		
+		"icon"				"vgui/stances/pure_heavy"
+		"rotationspeed"		"200"
+		"facingright"		"1"
+	}	
+
+	"pure.air"
+	{
+		"extends"		"balanced"
+		//"run_upper"	"ACT_BB_B_RUN_UPPER"
+
+		"left"	"PureAirLeft"
+		"right"	"PureAirRight" 
+		"forward"
+		{
+			"action" "PureAirString1"
+		}
+		
+		"icon"				"vgui/stances/pure_air"
+		"rotationspeed"		"300"
+		"facingright"		"1"
+	}
+
+}

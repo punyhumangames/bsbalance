@@ -1,0 +1,139 @@
+////////////////////////////////////////////////////////////////////
+// pure Heavy attacks
+////////////////////////////////////////////////////////////////////
+
+Actions
+{
+	"PureHeavyBase"
+	{
+		"move_scale"					"1"
+		"move_lock"						"0"
+		"animation_move"				"1"
+		"reaction"						"ACT_BB_STUMBLE_HEAVY"
+		"reaction_layer"				"ACT_HIT_UPPER_HEAVY"
+		"tier1"
+		{
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true
+			"damage"			"34"
+		}
+		"tier2"
+		{
+			"move_lock"			"1"
+			"damage"			"36"
+		}
+		"tier3"
+		{
+			"move_lock"			"1"
+			"damage"			"38"
+		}
+	}
+
+	"PureHeavyString1"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PureHeavyBase"
+		"charge_animation"				"ACT_BB_H_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_H_C1_CHARGE_RUNNING" // charge animation activity while running
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_C1_T1"						// attack animation activity
+			"lock_duration"		"0.9" 									// can override "lock_duration" above
+			"damage"			"34"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_C1_T2"
+			"lock_duration"		"1.4"
+			"damage"			"36"
+
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_C1_T1"
+			"lock_duration" 	"1.25"
+		}
+	} // end of "Heavy.String1"
+
+	"PureHeavyString2"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PureHeavyBase"
+		"charge_animation"				"ACT_BB_H_C2_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_C1_CHARGE_RUNNING"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_C2_T1"
+			"lock_duration"		"0.8"
+			"knockback_scale"	"0.3"
+			"damage"			"40"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_C2_T2"
+			"lock_duration"		"1.2"
+			"knockback_scale"	"0.3"
+			"damage"			"42"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_C2_T1"
+			"lock_duration"		"0.8"
+			"knockback_scale"	"0.3"
+			"damage"			"58"
+		}
+	} // end of "Heavy.String2"
+
+	"PureHeavyLeft"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PureHeavyBase"
+		"charge_animation"				"ACT_BB_H_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_LEFT_CHARGE_RUNNING"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_LEFT_T1"
+			"lock_duration"		"1.0"
+			"damage"			"20"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_LEFT_T2"
+			"lock_duration"		"1.4"
+			"damage"			"24"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_LEFT_T1"
+			"lock_duration"		"1.0"
+			"damage"			"28"
+		}
+	}
+
+	"PureHeavyRight"
+	{
+		"factoryclass"					"attack"
+		"extends"						"PureHeavyBase"
+		"charge_animation"				"ACT_BB_H_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_RIGHT_CHARGE_RUNNING"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T1"
+			"lock_duration"		"1.25"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T2"
+			"lock_duration"		"1.25"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T1"
+			"lock_duration"		"1.25"
+		}
+	}
+
+}

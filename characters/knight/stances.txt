@@ -1,0 +1,88 @@
+Stances
+{	
+	"knight.fast"
+	{
+		"extends"	"reverse"
+
+		"speed"		"1.0" // run speed modifier
+		"damage"	"10"
+		
+		"kb"		"0.045"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"KnightFastLeft" // left attack action name
+		"right"	"KnightFastRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "KnightFastString1"
+			"action" "KnightFastString2"
+			"action" "KnightFastString3"
+		}
+		
+		"icon"		"vgui/stances/knight_reverse"
+		"rotationspeed"		"300"
+		"facingright"		"1"
+	}
+	
+	"knight.balanced"
+	{
+		"extends"	"balanced"
+		"run_upper"	"ACT_BB_B_RUN_UPPER"
+
+		"kb"		"0.11"			//	knockback (default kb value is 0.0725)
+
+		// actions (see berimbau_actions.txt)
+		"left"	"KnightBalancedLeft" // left attack action name
+		"right"	"KnightBalancedRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "KnightBalancedString1"
+			"action" "KnightBalancedString2"
+			"action" "KnightBalancedString3"
+		}
+		
+		"icon"		"vgui/stances/knight_balanced"
+		"rotationspeed"		"150"
+		"facingright"		"1"
+	}
+
+	"knight.heavy"
+	{
+		"extends"	"heavy"
+		
+		// animations
+
+		// actions (see berimbau_actions.txt)
+		"left"	"KnightHeavyLeft"		// left attack action name
+		"right"	"KnightHeavyRight"		// right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "KnightHeavyString1"
+			"action" "KnightHeavyString2"
+			"action" "KnightHeavyString3"
+		}
+		
+		"icon"		"vgui/stances/knight_heavy"
+		"rotationspeed"		"175"
+		"facingright"		"0"
+	}
+
+	"knight.air"
+	{
+		"extends"	"air"
+
+		"kb"		"0.05"			//	knockback
+		"rotationspeed"		"1000"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"KnightAirLeft" // left attack action name
+		"right"	"KnightAirRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "KnightAirString1"
+		}
+		
+		"icon"		"vgui/stances/knight_air"
+		"facingright"	"1"
+	}
+}

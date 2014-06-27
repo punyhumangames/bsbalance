@@ -1,0 +1,196 @@
+////////////////////////////////////////////////////////////////////
+// phalanx fast attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"PhalanxFastBase"
+	{
+		"move_lock"				"0" 
+		"move_scale"			"1"
+		"animation_move"		"1"	
+		"reaction"						"ACT_BB_STUMBLE"
+		"reaction_layer"				"ACT_HIT_UPPER"				
+
+		"tier1"
+		{
+			"move_lock"			"1"			
+		}
+
+		"tier2"
+		{
+			"move_lock"			"1"			
+		}	
+
+		"tier3"
+		{
+			"move_lock"			"1"			
+		}			
+	}
+
+	"PhalanxFastString1"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxFastBase"
+		"charge_animation"				"ACT_BB_R_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" // charge animation activity while running
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C1_T1"						// attack animation activity			
+			"lock_duration"		"0.35" 									// can override "lock_duration" above
+			"damage"			"12"										// damage per hit
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C1_T2"
+			"lock_duration"		"0.50"
+			"damage"			"14"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C1_T3"															
+			"lock_duration"		"0.525" 									
+			"damage"			"18"								
+		}
+	}
+
+	"PhalanxFastString2"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxFastBase"		
+		"charge_animation"				"ACT_BB_R_C2_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" 
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C2_T1"														
+			"lock_duration"		"0.4" 		
+			"damage"			"12"											
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C2_T2"
+			"lock_duration"		"0.8"
+			"damage"			"14"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C2_T3"														
+			"lock_duration"		"1.0" 
+			"damage"			"18"																			
+		}
+	}
+	
+	"PhalanxFastString3"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxFastBase"		
+		"charge_animation"				"ACT_BB_R_C3_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" 
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C3_T1"														
+			"lock_duration"		"0.6" 	
+			"damage"			"14"			
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C3_T2"
+			"lock_duration"		"0.7"
+			"damage"			"18"	
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C3_T3"															
+			"lock_duration"		"0.85" 
+			"damage"			"22"																		
+		}
+	}	
+	
+	"PhalanxFastString4"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxFastBase"		
+		"charge_animation"				"ACT_BB_R_C4_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" 
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C4_T1"														
+			"lock_duration"		"0.85" 	
+			"damage"			"10"
+			"knockback_scale"	"0.5"						
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C4_T2"
+			"lock_duration"		"1.05"
+			"damage"			"18"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C4_T3"															
+			"lock_duration"		"1.6"
+			"damage"			"25"																			
+		}
+	}	
+
+	"PhalanxFastLeft"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxFastBase"		
+		"charge_animation"				"ACT_BB_R_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_LEFT_CHARGE_RUNNING" 
+			
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_LEFT_T1"															
+			"lock_duration"		"0.5" 	
+			"damage"			"6"		
+			"knockback_scale"		"1.5"			
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_LEFT_T2"
+			"lock_duration"		"0.425"
+			"damage"			"16"	
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_LEFT_T3"															
+			"lock_duration"		"0.5"
+			"damage"			"22"				 																	
+		}
+	}
+
+	"PhalanxFastRight"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxFastBase"		
+		"charge_animation"				"ACT_BB_R_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_RIGHT_CHARGE_RUNNING" 
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_RIGHT_T1"												
+			"lock_duration"		"0.5" 	
+			"damage"			"6"
+			"knockback_scale"		"1.5"				
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_RIGHT_T2"
+			"lock_duration"		"0.425"
+			"damage"			"16"	
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_RIGHT_T3"														
+			"lock_duration"		"0.5"
+			"damage"			"22"															
+		}
+	}
+
+}

@@ -1,0 +1,84 @@
+Stances
+{
+	"ryoku.fast"
+	{
+		"extends"	"reverse"
+
+		"speed"		"1.0" // run speed modifier
+		"damage"	"5"
+		"kb"		"0.09"
+
+		"run"			"ACT_BB_R_RUN"
+		"run_upper"		"ACT_BB_R_RUN_UPPER"
+		"turn"			""
+
+		// actions (see berimbau_actions.txt)
+		"left"	"RyokuReverseLeft" // left attack action name
+		"right"	"RyokuReverseRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "RyokuReverseString1"
+			"action" "RyokuReverseString2"
+			"action" "RyokuReverseString3"
+			"action" "RyokuReverseString4"
+			"action" "RyokuReverseString5"
+			"action" "RyokuReverseString6"
+		}	
+		"icon"		"vgui/stances/ryoku_fast"
+		"facingright"	"1"
+	}	
+	
+	"ryoku.balanced"
+	{
+		"extends"	"balanced"
+
+		// animations
+		"run_upper"	"ACT_BB_B_RUN_UPPER"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"RyokuBalancedLeft" // left attack action name
+		"right"	"RyokuBalancedRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "RyokuBalancedString1"
+			"action" "RyokuBalancedString2"
+		}	
+		"icon"		"vgui/stances/ryoku_balanced"
+		"facingright"	"1"
+	}
+	
+	"ryoku.heavy"
+	{
+		"extends"	"heavy"
+		"rotationspeed"		"100"
+
+		"left"	"RyokuHeavyLeft" // left attack action name
+		"right"	"RyokuHeavyRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "RyokuHeavyString1"
+		}	
+		"icon"		"vgui/stances/ryoku_heavy"
+		"facingright"	"1"
+	}
+	
+	"ryoku.air"
+	{
+		"extends"	"air"
+
+		"kb"		"0.15"			//	knockback
+		"rotationspeed"		"125"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"RyokuAirLeft" // left attack action name
+		"right"	"RyokuAirRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "RyokuAirString1"
+			"action" "RyokuAirString2"
+		}
+		
+		"icon"		"vgui/stances/ryoku_air"
+		"facingright"	"1"
+	}
+}

@@ -1,0 +1,169 @@
+////////////////////////////////////////////////////////////////////
+// ryoku balanced attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"RyokuBalancedBase"
+	{
+		"move_scale"					"1"
+		"move_lock"						"0"
+		"animation_move"				"1"
+		"reaction"						"ACT_BB_STUMBLE"
+		"reaction_layer"				"ACT_HIT_UPPER"		
+	}
+	"RyokuBalancedString1"
+	{
+		"factoryclass"					"attack"
+		"extends"						"RyokuBalancedBase"
+		"charge_animation"				"ACT_BB_B_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_B_C1_CHARGE_RUNNING" // charge animation activity while running
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_B_C1_T1"						// attack animation activity
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true			
+			"lock_duration"		"0.58" 									// can override "lock_duration" above
+			"damage"			"17"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_B_C1_T2"			
+			"move_lock"			"1"
+			"lock_duration" 	"1.1"
+			"damage"			"36"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_B_C1_T3"			
+			"move_lock"			"1"
+			"lock_duration" 	"1.7"
+			"damage"			"32"
+		}
+	} // end of "Balanced.String1"
+
+	"RyokuBalancedString2"
+	{
+		"factoryclass"					"attack"
+		"extends"						"RyokuBalancedBase"
+		"charge_animation"				"ACT_BB_B_C1_CHARGE"
+		"charge_animation_run"			"ACT_BB_B_C1_CHARGE_RUNNING"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_B_C2_T1"
+			"move_lock"			"1"
+			"lock_duration"		"1.1"
+			"damage"			"24"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_B_C2_T2"
+			"move_lock"			"1"
+			"lock_duration"		"0.85"
+			"damage"			"28"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_B_C2_T3"
+			"move_lock"			"1"
+			"lock_duration"		"1.6"
+			"damage"			"32"
+		}
+	} // end of "Balanced.String2"
+
+	"RyokuBalancedString3"
+	{
+		"factoryclass"					"attack"
+		"extends"						"RyokuBalancedBase"
+		"charge_animation"				"ACT_BB_B_C1_CHARGE"
+		"charge_animation_run"			"ACT_BB_B_C1_CHARGE_RUNNING"
+		"normal_block"					"ACT_BB_NORMAL_BLOCK_UPPER_RIGHT"			
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_B_C3_T1"
+			"move_lock"			"1"
+			"lock_duration"		"1.0"
+			"damage"			"12"
+			"stun_type"			"2"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_B_C3_T1"
+			"move_lock"			"1"
+			"lock_duration"		"0.5"
+			"damage"			"20"
+			"stun_type"			"2"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_B_C3_T1"
+			"move_lock"			"1"
+			"lock_duration"		"1.0"
+			"damage"			"26"
+			"stun_type"			"2"
+		}
+	} // end of "Balanced.String2"	
+
+	"RyokuBalancedLeft"
+	{
+		"factoryclass"					"attack"
+		"extends"						"RyokuBalancedBase"
+		"charge_animation"				"ACT_BB_B_C1_CHARGE"
+		"charge_animation_run"			"ACT_BB_B_C1_CHARGE_RUNNING" 
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_B_LEFT_T1"				//tracer goes about 96 units	
+			"move_lock"			"1"										
+			"lock_duration"		"1.4" 		
+			"damage"			"18"														
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_B_LEFT_T2"
+			"move_lock"			"1"
+			"lock_duration"		"0.8" 
+			"damage"			"32"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_B_LEFT_T3"						
+			"move_lock"			"1"										
+			"lock_duration"		"1.6" 																	
+			"damage"			"36"
+		}
+	}
+
+	"RyokuBalancedRight"
+	{
+		"factoryclass"					"attack"
+		"extends"						"RyokuBalancedBase"
+		"charge_animation"				"ACT_BB_B_C1_CHARGE"
+		"charge_animation_run"			"ACT_BB_B_C1_CHARGE_RUNNING" 
+		
+		"tier1"
+		{		
+			//NOTE: this is swapped with the old tier 2  attack, so the animations are now reversed.
+			"animation"			"ACT_BB_B_RIGHT_T2"			//tracer goes about 48 units			
+			"move_lock"			"1"										
+			"lock_duration"		"1.0" 		
+			"damage"			"22"														
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_B_RIGHT_T1"
+			"move_lock"			"1"
+			"lock_duration"		"2.0" 
+			"damage"			"30"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_B_RIGHT_T3"						
+			"move_lock"			"1"										
+			"lock_duration"		"2.3" 																	
+			"damage"			"40"
+		}
+	}
+}

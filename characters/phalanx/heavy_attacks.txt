@@ -1,0 +1,141 @@
+////////////////////////////////////////////////////////////////////
+// phalanx heavy attacks
+////////////////////////////////////////////////////////////////////
+
+Actions
+{
+	"PhalanxHeavyBase"
+	{
+		"move_lock"				"0"
+		"move_scale"			"1"
+		"animation_move"		"1"
+		"reaction"						"ACT_BB_STUMBLE_HEAVY"
+		"reaction_layer"				"ACT_HIT_UPPER_HEAVY"
+
+		"tier1"
+		{
+			"move_lock"			"1"
+		}
+
+		"tier2"
+		{
+			"move_lock"			"1"
+		}
+
+		"tier3"
+		{
+			"move_lock"			"1"
+		}
+	}
+
+	"PhalanxHeavyString1"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxHeavyBase"
+		"charge_animation"				"ACT_BB_H_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_H_C1_CHARGE_RUNNING" // charge animation activity while running
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_C1_T1"						// attack animation activity
+			"lock_duration"		"1.0" 									// can override "lock_duration" above
+			"damage"			"33"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_C1_T2"
+			"lock_duration"		"0.9"
+			"damage"			"36"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_C1_T3"		//travels 72~ units
+			"move_lock"			"1"
+			"lock_duration"		"1.6"
+			"damage"			"65"
+			"stun_type"			"1"
+		}
+	}
+
+	"PhalanxHeavyString2"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxHeavyBase"
+		"charge_animation"				"ACT_BB_H_C2_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_C1_CHARGE_RUNNING"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_C2_T1"		//travels 128~ units
+			"lock_duration"		"1.3"
+			"damage"			"32"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_C2_T2"		//travels 128~ units
+			"lock_duration"		"1.3"
+			"damage"			"38"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_C2_T3"		//travels 128~ units
+			"lock_duration"		"1.5"
+			"damage"			"45"
+			"stun_type"			"1"
+		}
+	}
+
+	"PhalanxHeavyLeft"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxHeavyBase"
+		"charge_animation"				"ACT_BB_H_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_LEFT_CHARGE_RUNNING"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_LEFT_T1"			//travels 64~ units
+			"lock_duration"		"0.8"
+			"damage"			"20"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_LEFT_T2"			//travels 160~ units
+			"lock_duration"		"0.9"
+			"damage"			"25"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_LEFT_T3"			//travels 160~ units
+			"lock_duration"		"1.2"
+			"damage"			"30"
+		}
+	}
+
+	"PhalanxHeavyRight"
+	{
+		"factoryclass"			"attack"
+		"extends"				"PhalanxHeavyBase"
+		"charge_animation"				"ACT_BB_H_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_RIGHT_CHARGE_RUNNING"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T1"			//travels 96~ units
+			"lock_duration"		"1.1"
+			"damage"			"25"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T2"			//travels 160~ units
+			"lock_duration"		"1.3"
+			"damage"			"27"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T3"			//travels 160~ units
+			"lock_duration"		"1.3"
+			"damage"			"30"
+		}
+	}
+}

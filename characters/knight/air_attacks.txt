@@ -1,0 +1,134 @@
+////////////////////////////////////////////////////////////////////
+// knight air attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"KnightAirBase"
+	{
+		"factoryclass"			"attack"
+		"move_lock"						"1" // movement lock; valid values are 0, false, 1, true
+		"animation_move"				"0"
+		"air_move"						"1"
+		"rotation_lock"					"0" // only this line needs to be changed!
+		"landing"						"ACT_BB_LAND_FORWARD"
+		"reaction"						"ACT_BB_STUMBLE_HEAVY"
+		"reaction_layer"				"ACT_HIT_UPPER_HEAVY"			
+
+		"tier1"
+		{		
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true			
+			"lock_duration"		"1.2" 									// can override "lock_duration" above
+			"land_lock_duration" "0.5"
+			"damage"			"24"									// damage per hit
+		}
+		"tier2"
+		{
+			"move_lock"			"1"
+			"lock_duration"		"1.1"
+			"land_lock_duration" "0.5"
+			"damage"			"28"
+		}
+		"tier3"
+		{
+			"move_lock"			"1"										
+			"lock_duration"		"1.2"								
+			"land_lock_duration" "0.5"
+			"damage"			"32"								
+		}
+	}
+	
+	"KnightAirString1"
+	{
+		"factoryclass"			"attack"
+		"extends"						"KnightAirBase"
+		"charge_animation"				"ACT_BB_A_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_A_C1_CHARGE" // charge animation activity while running				
+		"landing"						"ACT_BB_LAND_FORWARD"
+		"animation_move"				"1"
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_A_C1_T1"						// attack animation activity		
+			"lock_duration"		"1.2" 									// can override "lock_duration" above
+			"land_lock_duration" "0.3"
+			"animation_move_duration"		"0.4"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_C1_T2"
+			"lock_duration"		"1.1"
+			"land_lock_duration" "0.4"
+			"animation_move_duration"		"0.35"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_C1_T3"											
+			"lock_duration"		"1.2"													
+			"land_lock_duration" "0.6"			
+			"animation_move_duration"		"0.4"
+		}
+	}	
+
+	"KnightAirLeft"
+	{
+		"factoryclass"			"attack"
+		"extends"						"KnightAirBase"
+		"charge_animation"				"ACT_BB_A_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_A_LEFT_CHARGE" 					
+		"landing"						"ACT_BB_LAND_LEFT"
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_A_LEFT_T1"			
+			"damage"			"20"	
+			"lock_duration"		"1.5" 
+			"land_lock_duration" "0.4"			
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"damage"			"24"	
+			"lock_duration"		"1.5" 
+			"land_lock_duration" "0.4"			
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"						
+			"damage"			"30"	
+			"lock_duration"		"1.5"
+			"land_lock_duration" "0.4"			
+		}
+	}
+
+	"KnightAirRight"
+	{
+		"factoryclass"			"attack"
+		"extends"						"KnightAirBase"
+		"charge_animation"				"ACT_BB_A_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_A_RIGHT_CHARGE" 
+		"landing"						"ACT_BB_LAND_RIGHT"
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_A_RIGHT_T1"	
+			"damage"			"20"	
+			"lock_duration"		"0.8" 
+			"land_lock_duration" "0.7"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"damage"			"24"	
+			"lock_duration"		"1.0" 
+			"land_lock_duration" "0.7"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"			
+			"damage"			"30"	
+			"lock_duration"		"1.0"
+			"land_lock_duration" "0.7"	
+		}
+	}
+}

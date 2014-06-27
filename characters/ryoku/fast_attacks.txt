@@ -1,0 +1,268 @@
+////////////////////////////////////////////////////////////////////
+// ryoku fast attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"RyokuFastBase"
+	{
+		"move_scale"					"1"
+		"move_lock"						"0"
+		"animation_move"				"1"
+		"reaction"						"ACT_BB_STUMBLE"
+		"reaction_layer"				"ACT_HIT_UPPER"			
+	}
+
+	"RyokuReverseString1"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"
+		"charge_animation"		"ACT_BB_R_C1_CHARGE" // charge animation activity
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING" // charge animation activity while running
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C1_T1"						// attack animation activity
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true			
+			"lock_duration"		"0.28" 									// can override "lock_duration" above
+			"damage"			"12"		
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C1_T2"
+			"move_lock"			"1"
+			"lock_duration"		"0.28"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C1_T3"						
+			"move_lock"			"1"										
+			"lock_duration"		"0.56" 	
+			"damage"			"22"													
+		}
+	} // end of "RyokuReverseString1"
+
+	"RyokuReverseString2"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"		
+		"charge_animation"		"ACT_BB_R_C2_CHARGE"
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_R_C2_T1"
+			"move_lock"			"1"
+			"lock_duration"		"0.30"
+			"damage"			"12"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C2_T2"
+			"move_lock"			"1"
+			"lock_duration"		"0.35"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C2_T3"		
+			"move_lock"			"1"
+			"lock_duration"		"0.8"
+			"damage"			"22"
+		}
+	} // end of "RyokuReverseString2"
+
+	"RyokuReverseString3"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"		
+		"charge_animation"		"ACT_BB_R_C3_CHARGE"
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_R_C3_T1"
+			"move_lock"			"1"
+			"lock_duration"		"0.4"
+			"damage"			"12"
+			"knockback_scale"	"0.4"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C3_T2"			
+			"move_lock"			"1"
+			"lock_duration"		"0.5"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C3_T3"			
+			"move_lock"			"1"
+			"lock_duration" 	"0.85"
+			"damage"			"22"
+		}
+	} // end of "RyokuReverseString3"
+	
+	"RyokuReverseString4"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"		
+		"charge_animation"		"ACT_BB_R_C4_CHARGE"
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_R_C4_T3"
+			"move_lock"			"1"
+			"lock_duration"		"0.4"
+			"damage"			"12"
+			"knockback_scale"	"0.8"			
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C4_T2"			
+			"move_lock"			"1"
+			"lock_duration"		"0.68"
+			"damage"			"16"
+			"knockback_scale"	"0.8"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C4_T1"			
+			"move_lock"			"1"
+			"lock_duration" 	"0.6"
+			"damage"			"22"
+		}
+	} // end of "RyokuReverseString4"	
+	
+	"RyokuReverseString5"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"		
+		"charge_animation"		"ACT_BB_R_C5_CHARGE"
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_R_C5_T1"
+			"move_lock"			"1"
+			"lock_duration"		"0.8"
+			"damage"			"12"
+			"thrusting"			"1"	
+			"knockback_scale"	"0.7"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C5_T2"			
+			"move_lock"			"1"
+			"lock_duration"		"0.6"
+			"damage"			"16"
+			"thrusting"			"1"	
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C5_T3"			
+			"move_lock"			"1"
+			"lock_duration" 	"0.95"
+			"damage"			"22"
+			"thrusting"			"1"	
+		}
+	} // end of "RyokuReverseString5"	
+	
+	"RyokuReverseString6"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"		
+		"charge_animation"		"ACT_BB_R_C6_CHARGE"
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_R_C6_T1"
+			"move_lock"			"1"
+			"lock_duration"		"1.6"
+			"damage"			"12"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C6_T2"			
+			"move_lock"			"1"
+			"lock_duration"		"0.9"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C6_T3"			
+			"move_lock"			"1"
+			"lock_duration" 	"0.9"
+			"damage"			"22"
+		}
+	} // end of "RyokuReverseString6"	
+	
+	
+	"RyokuReverseLeft"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"		
+		"charge_animation"		"ACT_BB_R_LEFT_CHARGE"
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING"
+		"move_scale"			"0.7"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_R_LEFT_T1"
+			"move_lock"			"1"
+			"lock_duration"		"0.5"
+			"damage"			"12"
+			"knockback_scale"	"0.5"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_LEFT_T2"
+			"move_lock"			"1"
+			"lock_duration"		"0.95"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_LEFT_T3"
+			"move_lock"			"1"
+			"lock_duration"		"0.44"
+			"damage"			"22"
+		}
+	} // end of "RyokuReverseLeft"
+	
+	"RyokuReverseRight"
+	{
+		"factoryclass"			"attack"
+		"extends"				"RyokuFastBase"		
+		"charge_animation"		"ACT_BB_R_RIGHT_CHARGE"
+		"charge_animation_run"	"ACT_BB_R_C1_CHARGE_RUNNING"
+		"move_scale"			"0.7"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_R_RIGHT_T1"
+			"move_lock"			"1"
+			"lock_duration"		"1.0"
+			"damage"			"12"
+			"knockback_scale"	"0.5"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_RIGHT_T2"
+			"move_lock"			"1"
+			"lock_duration"		"0.95"
+			"damage"			"16"	
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_RIGHT_T3"
+			"move_lock"			"1"
+			"lock_duration"		"0.53"
+			"damage"			"22"
+		}
+	} // end of "RyokuReverseRight"		
+	
+}

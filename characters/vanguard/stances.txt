@@ -1,0 +1,20 @@
+Stances
+{
+	"vanguard.heavy"
+	{
+		"extends"		"heavy"
+
+		"forward"
+		{
+			"action" "VanguardHeavyForward"
+		}
+		"right"					"VanguardHeavyRight"
+		"forward_left"	"VanguardHeavyForwardLeft"
+		"forward_right"	"VanguardHeavyForwardRight"
+
+		"icon"				"vgui/stances/pure_heavy"
+		"rotationspeed"		"200"
+		"facingright"		"1"
+	}
+
+}

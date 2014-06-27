@@ -1,0 +1,159 @@
+////////////////////////////////////////////////////////////////////
+// Ryoku air attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"RyokuAirBase"
+	{
+		"factoryclass"			"attack"
+		"move_lock"						"0" // movement lock; valid values are 0, false, 1, true
+		"animation_move"				"1"
+		"air_move"						"1"
+		"rotation_lock"					"0"
+		"landing"						"ACT_BB_LAND_LEFT"
+		"reaction"						"ACT_BB_STUMBLE"
+		"reaction_layer"				"ACT_HIT_UPPER"				
+
+		"tier1"
+		{		
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true			
+			"damage"			"24"									// damage per hit
+		}
+		"tier2"
+		{
+			"move_lock"			"1"
+			"damage"			"28"
+		}
+		"tier3"
+		{
+			"move_lock"			"1"																	
+			"damage"			"32"								
+		}
+	}
+	
+	"RyokuAirString1"
+	{
+		"factoryclass"					"attack"
+		"extends"						"RyokuAirBase"
+		"charge_animation"				"ACT_BB_A_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_A_C1_CHARGE" // charge animation activity while running
+		"animation_move_duration"		"0.3"
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_A_C1_T1"						// attack animation activity		
+			"lock_duration"		"0.6" 									// can override "lock_duration" above
+			"damage"			"14"									// damage per hit
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_C1_T1"
+			"lock_duration"		"0.6" 
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_C1_T1"											
+			"lock_duration"		"0.6"			
+			"damage"			"20"																		
+		}
+	}	
+
+	"RyokuAirString2"
+	{
+		"factoryclass"					"attack"
+		"extends"						"RyokuAirBase"
+		"charge_animation"				"ACT_BB_A_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_A_C1_CHARGE" // charge animation activity while running
+		"landing"						"ACT_BB_LAND_DOWN"
+		"animation_move_duration"		"0.3"
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_A_C2_T1"						// attack animation activity		
+			"lock_duration"		"1.4" 									// can override "lock_duration" above
+			"damage"			"24"									// damage per hit
+			"knockback_scale"	"0.25"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_C2_T1"
+			"lock_duration"		"1.0"
+			"damage"			"28"									
+			"knockback_scale"	"0.25"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_C2_T1"											
+			"lock_duration"		"1.0"			
+			"damage"			"30"																		
+			"knockback_scale"	"0.25"
+		}
+	}	
+
+	"RyokuAirLeft"
+	{
+		"factoryclass"			"attack"
+		"extends"						"RyokuAirBase"
+		"charge_animation"				"ACT_BB_A_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_A_LEFT_CHARGE" 
+		"animation_move_duration"		"0.8"
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_A_LEFT_T1"			
+			"damage"			"14"	
+			"lock_duration"		"0.70" 
+			"land_lock_duration"	"0.9"
+			"knockback_scale"	"1.0"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"damage"			"18"	
+			"land_lock_duration"	"0.9"
+			"lock_duration"		"1.5" 
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"						
+			"damage"			"22"	
+			"land_lock_duration"	"0.9"
+			"lock_duration"		"1.5"
+		}
+	}
+
+	"RyokuAirRight"
+	{
+		"factoryclass"			"attack"
+		"extends"						"RyokuAirBase"
+		"charge_animation"				"ACT_BB_A_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_A_RIGHT_CHARGE" 
+		"animation_move_duration"		"0.8"		
+		"landing"						"ACT_BB_LAND_RIGHT"
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_A_RIGHT_T1"	
+			"damage"			"14"	
+			"lock_duration"		"0.70" 
+			"land_lock_duration"	"0.9"
+			"knockback_scale"	"1.0"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"damage"			"18"	
+			"lock_duration"		"1.5" 
+			"land_lock_duration"	"0.9"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"			
+			"damage"			"22"	
+			"lock_duration"		"1.5" 	
+			"land_lock_duration"	"0.9"																
+		}
+	}
+}

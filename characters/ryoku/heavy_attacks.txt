@@ -1,0 +1,114 @@
+////////////////////////////////////////////////////////////////////
+// ryoku heavy attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"RyokuHeavyBase"
+	{
+		"move_scale"					"1"
+		"move_lock"						"0"
+		"animation_move"				"1"
+		"reaction"						"ACT_BB_STUMBLE_HEAVY"
+		"reaction_layer"				"ACT_HIT_UPPER_HEAVY"			
+	}
+
+	"RyokuHeavyString1"
+	{
+		"factoryclass"					"attack"
+		"extends" 						"RyokuHeavyBase"
+		"charge_animation"				"ACT_BB_H_C1_CHARGE" 
+		"charge_animation_run"			"ACT_BB_H_C1_CHARGE_RUNNING" 
+	
+		"tier1"
+		{		
+			"animation"			"ACT_BB_H_C1_T1"						
+			"move_lock"			"1"										
+			"lock_duration"		"1.2" 									
+			"damage"			"28"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_C1_T2"			
+			"move_lock"			"1"
+			"lock_duration" 	"1.0"
+			"damage"			"34"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_C1_T1"			
+			"move_lock"			"1"
+			"air_move"			"1"
+			"lock_duration" 	"1.0"
+			"damage"			"48"
+			"stun_type"			"2"
+		}
+	}
+
+	"RyokuHeavyRight"
+	{
+		"factoryclass"					"attack"
+		"extends" 						"RyokuHeavyBase"		
+		"charge_animation"				"ACT_BB_H_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_RIGHT_CHARGE_RUNNING" 
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_H_RIGHT_T1"						
+			"move_lock"			"1"										
+			"lock_duration"		"0.75"
+			"damage"			"20"
+			"knockback_scale"	".25"	
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T2"
+			"move_lock"			"1"
+			"lock_duration"		"1.0"
+			"damage"			"30"
+			"knockback_scale"	"-0.25"				
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_RIGHT_T3"						
+			"move_lock"			"1"										
+			"lock_duration"		"1.0" 																	
+			"damage"			"40"
+			"knockback_scale"	"0.25"				
+		}
+	}	
+
+	"RyokuHeavyLeft"
+	{
+		"factoryclass"					"attack"
+		"extends" 						"RyokuHeavyBase"		
+		"charge_animation"				"ACT_BB_H_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_H_LEFT_CHARGE_RUNNING" 
+		
+		"tier1"
+		{		
+			"animation"			"ACT_BB_H_LEFT_T1"						
+			"move_lock"			"1"										
+			"lock_duration"		"0.7" 		
+			"damage"			"20"	
+			"knockback_scale"	"0.25"														
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_H_LEFT_T2"
+			"move_lock"			"1"
+			"lock_duration"		"0.6" 
+			"damage"			"30"
+			"knockback_scale"	"-0.3"	
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_H_LEFT_T3"						
+			"move_lock"			"1"										
+			"lock_duration"		"1.0" 																	
+			"damage"			"40"
+			"knockback_scale"	"0.25"				
+		}
+	}		
+
+}

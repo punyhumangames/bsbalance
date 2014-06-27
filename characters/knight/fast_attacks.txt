@@ -1,0 +1,170 @@
+////////////////////////////////////////////////////////////////////
+// knight fast attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"KnightFastBase"
+	{
+		"move_scale"					"1"
+		"move_lock"						"0"
+		"animation_move"				"1"
+		"reaction"						"ACT_BB_STUMBLE"
+		"reaction_layer"				"ACT_HIT_UPPER"			
+		"tier1"
+		{		
+			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true			
+		}
+		"tier2"
+		{
+			"move_lock"			"1"
+		}
+		"tier3"
+		{
+			"move_lock"			"1"																								
+		}				
+	}
+	
+	"KnightFastString1"
+	{
+		"factoryclass"					"attack"
+		"extends"						"KnightFastBase"
+		"charge_animation"				"ACT_BB_R_C1_CHARGE" // charge animation activity
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" // charge animation activity while running
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C1_T1"						// attack animation activity
+			"lock_duration"		"0.2" 									// can override "lock_duration" above
+			"damage"			"18"
+			"knockback_scale"		"0.5"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C1_T2"
+			"lock_duration"		"0.3"
+			"damage"			"20"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C1_T3"						
+			"lock_duration"		"0.3" 																	
+			"damage"			"26"
+			"knockback_scale"		"1.75"
+		}
+	}
+
+	"KnightFastString2"
+	{
+		"factoryclass"					"attack"
+		"extends"						"KnightFastBase"
+		"charge_animation"				"ACT_BB_R_C2_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" 
+
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C2_T1"						
+			"lock_duration"		"0.4" 																
+			"damage"			"14"
+			"knockback_scale"		"0.5"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C2_T2"
+			"lock_duration"		"0.37"
+			"damage"			"20"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C2_T3"						
+			"lock_duration"		"0.6" 																	
+			"damage"			"26"
+		}
+	}
+	
+	"KnightFastString3"
+	{
+		"factoryclass"					"attack"
+		"extends"						"KnightFastBase"
+		"charge_animation"				"ACT_BB_R_C3_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_C1_CHARGE_RUNNING" 
+	
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_C3_T1"						
+			"lock_duration"		"0.55" 																	
+			"damage"			"18"
+			"knockback_scale"	"2.5"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_C3_T2"
+			"lock_duration"		"0.55"
+			"damage"			"18"
+			"knockback_scale"	"2.5"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_C3_T3"						
+			"lock_duration"		"0.45" 
+			"damage"			"30"																	
+		}
+	}	
+	
+	"KnightFastLeft"
+	{
+		"factoryclass"					"attack"
+		"extends"						"KnightFastBase"
+		"charge_animation"				"ACT_BB_R_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_LEFT_CHARGE_RUNNING" 
+	
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_LEFT_T1"						
+			"lock_duration"		"0.75" 		
+			"damage"			"14"	
+			"knockback_scale"	"1.5"				
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_LEFT_T2"
+			"lock_duration"		"0.5"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_LEFT_T3"						
+			"lock_duration"		"0.35" 																	
+			"damage"			"22"
+		}
+	}
+
+	"KnightFastRight"
+	{
+		"factoryclass"					"attack"
+		"extends"						"KnightFastBase"
+		"charge_animation"				"ACT_BB_R_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_RIGHT_CHARGE_RUNNING" 
+	
+		"tier1"
+		{		
+			"animation"			"ACT_BB_R_RIGHT_T1"						
+			"lock_duration"		"0.75" 		
+			"damage"			"14"	
+			"knockback_scale"		"1.5"				
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_R_RIGHT_T2"
+			"lock_duration"		"0.38"
+			"damage"			"18"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_R_RIGHT_T3"						
+			"lock_duration"		"0.43" 																	
+			"damage"			"22"
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+"PhalanxActionManifest"
+{
+	"file"			"balanced_attacks.txt"
+	"file"			"fast_attacks.txt"
+	"file"			"heavy_attacks.txt"
+	"file"			"air_attacks.txt"
+}

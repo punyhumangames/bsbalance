@@ -1,0 +1,139 @@
+////////////////////////////////////////////////////////////////////
+// Vanguard Heavy attacks
+////////////////////////////////////////////////////////////////////
+
+Actions
+{
+	"VanguardHeavyBase"
+	{
+		"move_scale"					"1"
+		"move_lock"						"0"
+		"animation_move"			"1"
+		"reaction"						"ACT_BB_STUMBLE_HEAVY"
+		"reaction_layer"			"ACT_HIT_UPPER_HEAVY"
+		"tier1"
+		{
+			"move_lock"			"0"
+			"damage"				"34"
+			"animation_move_controlled" "1"
+		}
+		"tier2"
+		{
+			"move_lock"			"0"
+			"damage"				"36"
+		}
+		"tier3"
+		{
+			"move_lock"			"0"
+			"damage"				"38"
+		}
+	}
+
+	"VanguardHeavyForward"
+	{
+		"factoryclass"						"attack"
+		"extends"									"VanguardHeavyBase"
+		"charge_animation"				"ACT_IDLE"
+		"charge_animation_run"		"ACT_IDLE"
+
+		"tier1"
+		{
+			"animation"								"ACT_BB_H_F_R_T1"
+			"lock_duration"						"1.4"
+			"damage"									"34"
+		}
+		"tier2"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration"		"1.55"
+			"damage"					"36"
+
+		}
+		"tier3"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration" 	"1.25"
+		}
+	}
+
+	"VanguardHeavyRight"
+	{
+		"factoryclass"						"attack"
+		"extends"									"VanguardHeavyBase"
+		"charge_animation"				"ACT_IDLE"
+		"charge_animation_run"		"ACT_IDLE"
+
+		"tier1"
+		{
+			"animation"								"ACT_BB_H_R_T1"
+			"lock_duration"						"1.4"
+			"damage"									"34"
+		}
+		"tier2"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration"		"1.55"
+			"damage"					"36"
+
+		}
+		"tier3"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration" 	"1.25"
+		}
+	}
+
+	"VanguardHeavyForwardLeft"
+	{
+		"factoryclass"						"attack"
+		"extends"									"VanguardHeavyBase"
+		"charge_animation"				"ACT_IDLE"
+		"charge_animation_run"		"ACT_IDLE"
+
+		"tier1"
+		{
+			"animation"								"ACT_BB_H_F_L_T1"
+			"lock_duration"						"1.4"
+			"damage"									"34"
+		}
+		"tier2"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration"		"1.55"
+			"damage"					"36"
+
+		}
+		"tier3"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration" 	"1.25"
+		}
+	}
+
+	"VanguardHeavyForwardRight"
+	{
+		"factoryclass"						"attack"
+		"extends"									"VanguardHeavyBase"
+		"charge_animation"				"ACT_IDLE"
+		"charge_animation_run"		"ACT_IDLE"
+
+		"tier1"
+		{
+			"animation"								"ACT_BB_H_F_R_T1"
+			"lock_duration"						"1.4"
+			"damage"									"34"
+		}
+		"tier2"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration"		"1.55"
+			"damage"					"36"
+
+		}
+		"tier3"
+		{
+			"animation"				"ACT_IDLE"
+			"lock_duration" 	"1.25"
+		}
+	}
+}
