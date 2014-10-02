@@ -95,8 +95,9 @@ Actions
 		"tier1"
 		{
 			"animation"			"ACT_BB_H_LEFT_T1"
-			"lock_duration"		"1.0"
+			"lock_duration"		"0.8"
 			"damage"			"20"
+			"knockback_scale"	"1.1"
 		}
 		"tier2"
 		{

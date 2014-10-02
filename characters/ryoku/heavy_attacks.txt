@@ -58,7 +58,7 @@ Actions
 			"move_lock"			"1"										
 			"lock_duration"		"0.75"
 			"damage"			"20"
-			"knockback_scale"	".25"	
+			"knockback_scale"	"1"	
 		}
 		"tier2"
 		{
@@ -66,7 +66,7 @@ Actions
 			"move_lock"			"1"
 			"lock_duration"		"1.0"
 			"damage"			"30"
-			"knockback_scale"	"-0.25"				
+			"knockback_scale"	"1"				
 		}
 		"tier3"
 		{
@@ -74,7 +74,7 @@ Actions
 			"move_lock"			"1"										
 			"lock_duration"		"1.0" 																	
 			"damage"			"40"
-			"knockback_scale"	"0.25"				
+			"knockback_scale"	"1"				
 		}
 	}	
 
@@ -91,7 +91,7 @@ Actions
 			"move_lock"			"1"										
 			"lock_duration"		"0.7" 		
 			"damage"			"20"	
-			"knockback_scale"	"0.25"														
+			"knockback_scale"	"1"														
 		}
 		"tier2"
 		{
@@ -99,7 +99,7 @@ Actions
 			"move_lock"			"1"
 			"lock_duration"		"0.6" 
 			"damage"			"30"
-			"knockback_scale"	"-0.3"	
+			"knockback_scale"	"1"	
 		}
 		"tier3"
 		{
@@ -107,7 +107,7 @@ Actions
 			"move_lock"			"1"										
 			"lock_duration"		"1.0" 																	
 			"damage"			"40"
-			"knockback_scale"	"0.25"				
+			"knockback_scale"	"1"				
 		}
 	}		
 

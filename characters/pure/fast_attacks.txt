@@ -95,7 +95,7 @@ Actions
 		"tier1"
 		{
 			"animation"			"ACT_BB_R_C3_T2"
-			"lock_duration"		"1.2"
+			"lock_duration"		"0.9"
 			"damage"			"18"
 		}
 		"tier2"
@@ -159,11 +159,11 @@ Actions
 			"action_upperbody" 			"1"
 			"move_lock"					"0"
 			"animation_lowerbody"		"ACT_RUN"
-			"runspeedscale"				"1.0"
+			"runspeedscale"				".5"
 			"animation_move"			"0"
-			"animation"					"ACT_BB_R_RIGHT_T1"
+			"animation"					"ACT_BB_R_RIGHT_T2"
 			"lock_duration"				"0.8"
-			"damage"					"7"
+			"damage"					"4"
 			"knockback_scale"			"0.5"
 			"airspeedscale"				"0.85"
 		}
@@ -174,7 +174,7 @@ Actions
 			"animation_lowerbody"		"ACT_RUN"
 			"runspeedscale"				"1.0"
 			"animation_move"			"0"
-			"animation"					"ACT_BB_R_RIGHT_T2"
+			"animation"					"ACT_BB_R_RIGHT_T1"
 			"lock_duration"				"0.5"
 			"damage"					"10"
 			"knockback_scale"			"0.5"
