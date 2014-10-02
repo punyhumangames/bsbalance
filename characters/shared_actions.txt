@@ -256,10 +256,7 @@ Actions
   "Kill"
   {
     "factoryclass"        "kill"
-    "animation1"          "ACT_BB_BELLY_SLICE"
-    "animation2"          "ACT_BB_BELLY_SLICE_SIDE"
-    "animation3"          "ACT_BB_NECK_SLICE"
-    "animation4"          "ACT_BB_SPINNING_FACEPLANT"
+    "animation"          "ACT_BB_DEATH"
     "move_lock"           "1"
     "animation_move"      "1"
     "rotation_lock"       "1"
@@ -358,30 +355,29 @@ Actions
   }
 
 ////////////////////////////////////////////////////////////////////
-// wall flips
+// Parkour moves
 ////////////////////////////////////////////////////////////////////
   "WallFlip"
   {
     "factoryclass"            "wallflip"
     "animation"               "ACT_BB_WALLFLIP"
 
-    "move_scale"              "2"
-    "animation_move"          "1"
-    "animation_move_duration" "0.3"
-
     "air_move"                "1"
+	"gravity_scale"				"0.5"
+	"air_drag_scale"			"0.99"
   }
-
-  "WallFlipSmall"
+  
+  "WallSlide"
   {
-    "factoryclass"            "wallflip"
-    "animation"               "ACT_BB_WALLFLIP"
-
-    "move_scale"              "1"
-    "animation_move"          "1"
-    "animation_move_duration" "0.12"
+    "factoryclass"            "wallslide"
+    "action_upperbody"    "1"
+    "animation_lowerbody"      "ACT_BB_WALLSLIDE"
+    "rotation_lock"     "1"
 
     "air_move"                "1"
+	"gravity_scale"				"0.12"
+	"air_drag_scale"			"0.9"
+	"lock_duration"				"1.2"
   }
 
   "WallRun"
@@ -389,7 +385,6 @@ Actions
     "factoryclass"      "wallrun"
     "animation"         "ACT_BB_WALLRUN"
 
-    "move_lock"         "1"
     "move_scale"        "1"
     "animation_move"    "1"
     "air_move"          "1"
@@ -409,6 +404,7 @@ Actions
     "air_move"            "1"
     "noclip_move"         "1"
     "rotation_lock"       "1"
+	"action_velocity_impulse"	"0"
   }
 
   "Vault"
@@ -418,6 +414,7 @@ Actions
 
     "move_lock"           "1"
     "move_softcollision"  "0"
+    "lock_duration"       "0.75"
 
     "animation_move"      "1"
 
@@ -426,7 +423,7 @@ Actions
   }
 
 ////////////////////////////////////////////////////////////////////
-// throwable weapons
+// items
 ////////////////////////////////////////////////////////////////////
 
   "ThrowWeapon"
@@ -453,6 +450,17 @@ Actions
     "animation_move"      "0"
     //"runspeedscale"     "0.5"
     "action_upperbody"    "1"
+  }
+  
+  "GrapplingHook"
+  {
+    "factoryclass"        "grapplinghook"
+	"animation_pitchaim"	"1"
+    "action_upperbody"    "1"
+    "jump"              "1"
+	"animation_lowerbody"	"ACT_RUN"
+	"override_move"		"4" // MOVETYPE_FLY
+    "rotation_lock"     "0"
   }
 
 ////////////////////////////////////////////////////////////////////

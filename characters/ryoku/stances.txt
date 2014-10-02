@@ -4,7 +4,6 @@ Stances
 	{
 		"extends"	"reverse"
 
-		"speed"		"1.0" // run speed modifier
 		"damage"	"5"
 		"kb"		"0.09"
 

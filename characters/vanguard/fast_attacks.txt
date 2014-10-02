@@ -1,0 +1,223 @@
+////////////////////////////////////////////////////////////////////
+// Vanguard Fast attacks
+////////////////////////////////////////////////////////////////////
+
+Actions
+{
+  "VanguardFastBase"
+  {
+    "move_scale"          "1"
+    "move_lock"           "0"
+    "animation_move"      "0"
+    "reaction"            "ACT_BB_STUMBLE_HEAVY"
+    "reaction_layer"      "ACT_HIT_UPPER_HEAVY"
+    "tier1"
+    {
+      "animation_move"            "0"
+      "action_upperbody"          "1"
+      "animation_lowerbody"       "ACT_BB_R_RUN"
+      "move_lock"                 "0"
+      "damage"                    "34"
+    }
+    "tier2"
+    {
+      "animation_move"            "0"
+      "action_upperbody"          "1"
+      "animation_lowerbody"       "ACT_BB_R_RUN"
+      "move_lock"                 "0"
+      "damage"                    "34"
+    }
+    "tier3"
+    {
+      "animation_move"            "0"
+      "action_upperbody"          "1"
+      "animation_lowerbody"       "ACT_BB_R_RUN"
+      "move_lock"                 "0"
+      "damage"                    "34"
+    }
+  }
+
+  "VanguardFastForward"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+
+  "VanguardForwardFastRight"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_FORWARD_RIGHT_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+
+  "VanguardFastForwardLeft"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_FORWARD_LEFT_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+
+  "VanguardFastForwardRight"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_FORWARD_RIGHT_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+
+  "VanguardFastLeft"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_LEFT_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+
+  "VanguardFastRight"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_RIGHT_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+
+  "VanguardFastBackLeft"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_BACK_LEFT_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+
+  "VanguardFastBackRight"
+  {
+    "factoryclass"            "attack"
+    "extends"                 "VanguardFastBase"
+    "charge_animation"        "ACT_IDLE"
+    "charge_animation_run"    "ACT_IDLE"
+
+    "tier1"
+    {
+      "animation"               "ACT_BB_R_BACK_RIGHT_T1"
+      "lock_duration"           "0.8"
+      "damage"                  "34"
+    }
+    "tier2"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+    "tier3"
+    {
+      "animation"               "ACT_BB_R_FORWARD_T1"
+    }
+  }
+}

@@ -1,7 +1,7 @@
-"PureActionManifest"
+"VanguardActionManifest"
 {
-	"file"			"balanced_attacks.txt"
+	//"file"			"balanced_attacks.txt"
 	"file"			"fast_attacks.txt"
 	"file"			"heavy_attacks.txt"
-	"file"			"air_attacks.txt"
+	//"file"			"air_attacks.txt"
 }
