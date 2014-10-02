@@ -2,7 +2,7 @@
 {
 	"metadata"
 	{
-		"command"		"bb_tracerrecord Pure ACT_BB_B_C3_T3 0.4 0.8"
+		"command"		"bb_tracerrecord Pure ACT_BB_B_C3_T3 0.2 0.8"
 	}
 	"pure"
 	{
@@ -10,427 +10,659 @@
 		{
 			"trace"
 			{
-				"cycle"		"0.400279"
+				"cycle"		"0.200833"
 			}
 			"trace"
 			{
-				"cycle"		"0.405626"
+				"cycle"		"0.202500"
 			}
 			"trace"
 			{
-				"cycle"		"0.407917"
+				"cycle"		"0.203333"
 			}
 			"trace"
 			{
-				"cycle"		"0.414793"
+				"cycle"		"0.204166"
 			}
 			"trace"
 			{
-				"cycle"		"0.416320"
+				"cycle"		"0.204999"
 			}
 			"trace"
 			{
-				"cycle"		"0.423196"
+				"cycle"		"0.205833"
 			}
 			"trace"
 			{
-				"cycle"		"0.424723"
+				"cycle"		"0.207499"
 			}
 			"trace"
 			{
-				"cycle"		"0.428543"
+				"cycle"		"0.209166"
 			}
 			"trace"
 			{
-				"cycle"		"0.432362"
+				"cycle"		"0.209999"
 			}
 			"trace"
 			{
-				"cycle"		"0.439237"
+				"cycle"		"0.210833"
 			}
 			"trace"
 			{
-				"cycle"		"0.447640"
+				"cycle"		"0.211666"
 			}
 			"trace"
 			{
-				"cycle"		"0.458335"
+				"cycle"		"0.212500"
 			}
 			"trace"
 			{
-				"cycle"		"0.468265"
+				"cycle"		"0.213333"
 			}
 			"trace"
 			{
-				"cycle"		"0.478196"
+				"cycle"		"0.214166"
 			}
 			"trace"
 			{
-				"cycle"		"0.487363"
+				"cycle"		"0.214999"
 			}
 			"trace"
 			{
-				"cycle"		"0.494238"
+				"cycle"		"0.215833"
 			}
 			"trace"
 			{
-				"cycle"		"0.501113"
+				"cycle"		"0.216666"
 			}
 			"trace"
 			{
-				"cycle"		"0.508753"
+				"cycle"		"0.218333"
 			}
 			"trace"
 			{
-				"cycle"		"0.515627"
+				"cycle"		"0.219999"
 			}
 			"trace"
 			{
-				"cycle"		"0.523267"
+				"cycle"		"0.221666"
 			}
 			"trace"
 			{
-				"cycle"		"0.529378"
+				"cycle"		"0.223333"
 			}
 			"trace"
 			{
-				"cycle"		"0.533961"
+				"cycle"		"0.225000"
 			}
 			"trace"
 			{
-				"cycle"		"0.540072"
+				"cycle"		"0.226666"
 			}
 			"trace"
 			{
-				"cycle"		"0.546948"
+				"cycle"		"0.228333"
 			}
 			"trace"
 			{
-				"cycle"		"0.553059"
+				"cycle"		"0.229999"
 			}
 			"trace"
 			{
-				"cycle"		"0.560698"
+				"cycle"		"0.231666"
 			}
 			"trace"
 			{
-				"cycle"		"0.568337"
+				"cycle"		"0.233333"
 			}
 			"trace"
 			{
-				"cycle"		"0.571392"
+				"cycle"		"0.235833"
 			}
 			"trace"
 			{
-				"cycle"		"0.575212"
+				"cycle"		"0.238333"
 			}
 			"trace"
 			{
-				"cycle"		"0.578268"
+				"cycle"		"0.240833"
 			}
 			"trace"
 			{
-				"cycle"		"0.582087"
+				"cycle"		"0.244999"
 			}
 			"trace"
 			{
-				"cycle"		"0.585143"
+				"cycle"		"0.249999"
 			}
 			"trace"
 			{
-				"cycle"		"0.588198"
+				"cycle"		"0.259166"
 			}
 			"trace"
 			{
-				"cycle"		"0.592018"
+				"cycle"		"0.267500"
 			}
 			"trace"
 			{
-				"cycle"		"0.603477"
+				"cycle"		"0.277500"
 			}
 			"trace"
 			{
-				"cycle"		"0.606532"
+				"cycle"		"0.284166"
 			}
 			"trace"
 			{
-				"cycle"		"0.609588"
+				"cycle"		"0.289167"
 			}
 			"trace"
 			{
-				"cycle"		"0.612643"
+				"cycle"		"0.303333"
 			}
 			"trace"
 			{
-				"cycle"		"0.615699"
+				"cycle"		"0.312500"
 			}
 			"trace"
 			{
-				"cycle"		"0.618755"
+				"cycle"		"0.319167"
 			}
 			"trace"
 			{
-				"cycle"		"0.621810"
+				"cycle"		"0.327500"
 			}
 			"trace"
 			{
-				"cycle"		"0.624866"
+				"cycle"		"0.335000"
 			}
 			"trace"
 			{
-				"cycle"		"0.627158"
+				"cycle"		"0.340000"
 			}
 			"trace"
 			{
-				"cycle"		"0.629449"
+				"cycle"		"0.345834"
 			}
 			"trace"
 			{
-				"cycle"		"0.631741"
+				"cycle"		"0.351667"
 			}
 			"trace"
 			{
-				"cycle"		"0.634032"
+				"cycle"		"0.355000"
 			}
 			"trace"
 			{
-				"cycle"		"0.635561"
+				"cycle"		"0.358334"
 			}
 			"trace"
 			{
-				"cycle"		"0.637088"
+				"cycle"		"0.361667"
 			}
 			"trace"
 			{
-				"cycle"		"0.638616"
+				"cycle"		"0.365000"
 			}
 			"trace"
 			{
-				"cycle"		"0.640144"
+				"cycle"		"0.370001"
 			}
 			"trace"
 			{
-				"cycle"		"0.641672"
+				"cycle"		"0.376667"
 			}
 			"trace"
 			{
-				"cycle"		"0.643199"
+				"cycle"		"0.380000"
 			}
 			"trace"
 			{
-				"cycle"		"0.644727"
+				"cycle"		"0.383334"
 			}
 			"trace"
 			{
-				"cycle"		"0.646255"
+				"cycle"		"0.385834"
 			}
 			"trace"
 			{
-				"cycle"		"0.647783"
+				"cycle"		"0.388334"
 			}
 			"trace"
 			{
-				"cycle"		"0.649311"
+				"cycle"		"0.390834"
 			}
 			"trace"
 			{
-				"cycle"		"0.650838"
+				"cycle"		"0.392500"
 			}
 			"trace"
 			{
-				"cycle"		"0.652367"
+				"cycle"		"0.394167"
 			}
 			"trace"
 			{
-				"cycle"		"0.653894"
+				"cycle"		"0.395834"
 			}
 			"trace"
 			{
-				"cycle"		"0.655422"
+				"cycle"		"0.397500"
 			}
 			"trace"
 			{
-				"cycle"		"0.656950"
+				"cycle"		"0.399167"
 			}
 			"trace"
 			{
-				"cycle"		"0.658478"
+				"cycle"		"0.404167"
 			}
 			"trace"
 			{
-				"cycle"		"0.660005"
+				"cycle"		"0.406667"
 			}
 			"trace"
 			{
-				"cycle"		"0.661533"
+				"cycle"		"0.408334"
 			}
 			"trace"
 			{
-				"cycle"		"0.663061"
+				"cycle"		"0.415000"
 			}
 			"trace"
 			{
-				"cycle"		"0.664589"
+				"cycle"		"0.416667"
 			}
 			"trace"
 			{
-				"cycle"		"0.666116"
+				"cycle"		"0.423334"
 			}
 			"trace"
 			{
-				"cycle"		"0.667644"
+				"cycle"		"0.425000"
 			}
 			"trace"
 			{
-				"cycle"		"0.669173"
+				"cycle"		"0.429167"
 			}
 			"trace"
 			{
-				"cycle"		"0.670700"
+				"cycle"		"0.432500"
 			}
 			"trace"
 			{
-				"cycle"		"0.672228"
+				"cycle"		"0.439167"
 			}
 			"trace"
 			{
-				"cycle"		"0.673756"
+				"cycle"		"0.447500"
 			}
 			"trace"
 			{
-				"cycle"		"0.675284"
+				"cycle"		"0.458333"
 			}
 			"trace"
 			{
-				"cycle"		"0.677575"
+				"cycle"		"0.468334"
 			}
 			"trace"
 			{
-				"cycle"		"0.679867"
+				"cycle"		"0.478333"
 			}
 			"trace"
 			{
-				"cycle"		"0.682159"
+				"cycle"		"0.487500"
 			}
 			"trace"
 			{
-				"cycle"		"0.684450"
+				"cycle"		"0.494167"
 			}
 			"trace"
 			{
-				"cycle"		"0.685978"
+				"cycle"		"0.500833"
 			}
 			"trace"
 			{
-				"cycle"		"0.687506"
+				"cycle"		"0.508333"
 			}
 			"trace"
 			{
-				"cycle"		"0.689033"
+				"cycle"		"0.514167"
 			}
 			"trace"
 			{
-				"cycle"		"0.690562"
+				"cycle"		"0.522500"
 			}
 			"trace"
 			{
-				"cycle"		"0.692090"
+				"cycle"		"0.529167"
 			}
 			"trace"
 			{
-				"cycle"		"0.694381"
+				"cycle"		"0.534167"
 			}
 			"trace"
 			{
-				"cycle"		"0.696673"
+				"cycle"		"0.540834"
 			}
 			"trace"
 			{
-				"cycle"		"0.698201"
+				"cycle"		"0.547501"
 			}
 			"trace"
 			{
-				"cycle"		"0.699728"
+				"cycle"		"0.554168"
 			}
 			"trace"
 			{
-				"cycle"		"0.702020"
+				"cycle"		"0.561667"
 			}
 			"trace"
 			{
-				"cycle"		"0.704312"
+				"cycle"		"0.569168"
 			}
 			"trace"
 			{
-				"cycle"		"0.706604"
+				"cycle"		"0.572501"
 			}
 			"trace"
 			{
-				"cycle"		"0.708895"
+				"cycle"		"0.576668"
 			}
 			"trace"
 			{
-				"cycle"		"0.711951"
+				"cycle"		"0.580001"
 			}
 			"trace"
 			{
-				"cycle"		"0.715007"
+				"cycle"		"0.584168"
 			}
 			"trace"
 			{
-				"cycle"		"0.718062"
+				"cycle"		"0.587501"
 			}
 			"trace"
 			{
-				"cycle"		"0.721882"
+				"cycle"		"0.591668"
 			}
 			"trace"
 			{
-				"cycle"		"0.725701"
+				"cycle"		"0.603335"
 			}
 			"trace"
 			{
-				"cycle"		"0.729521"
+				"cycle"		"0.606668"
 			}
 			"trace"
 			{
-				"cycle"		"0.733340"
+				"cycle"		"0.610001"
 			}
 			"trace"
 			{
-				"cycle"		"0.737160"
+				"cycle"		"0.613335"
 			}
 			"trace"
 			{
-				"cycle"		"0.740980"
+				"cycle"		"0.616668"
 			}
 			"trace"
 			{
-				"cycle"		"0.744799"
+				"cycle"		"0.619168"
 			}
 			"trace"
 			{
-				"cycle"		"0.748618"
+				"cycle"		"0.622502"
 			}
 			"trace"
 			{
-				"cycle"		"0.753202"
+				"cycle"		"0.625835"
 			}
 			"trace"
 			{
-				"cycle"		"0.758549"
+				"cycle"		"0.628335"
 			}
 			"trace"
 			{
-				"cycle"		"0.763897"
+				"cycle"		"0.630835"
 			}
 			"trace"
 			{
-				"cycle"		"0.771535"
+				"cycle"		"0.633335"
 			}
 			"trace"
 			{
-				"cycle"		"0.781466"
+				"cycle"		"0.635002"
+			}
+			"trace"
+			{
+				"cycle"		"0.636668"
+			}
+			"trace"
+			{
+				"cycle"		"0.638335"
+			}
+			"trace"
+			{
+				"cycle"		"0.640002"
+			}
+			"trace"
+			{
+				"cycle"		"0.641669"
+			}
+			"trace"
+			{
+				"cycle"		"0.643335"
+			}
+			"trace"
+			{
+				"cycle"		"0.645002"
+			}
+			"trace"
+			{
+				"cycle"		"0.646669"
+			}
+			"trace"
+			{
+				"cycle"		"0.647502"
+			}
+			"trace"
+			{
+				"cycle"		"0.649169"
+			}
+			"trace"
+			{
+				"cycle"		"0.650835"
+			}
+			"trace"
+			{
+				"cycle"		"0.652502"
+			}
+			"trace"
+			{
+				"cycle"		"0.654169"
+			}
+			"trace"
+			{
+				"cycle"		"0.655836"
+			}
+			"trace"
+			{
+				"cycle"		"0.657502"
+			}
+			"trace"
+			{
+				"cycle"		"0.659169"
+			}
+			"trace"
+			{
+				"cycle"		"0.660836"
+			}
+			"trace"
+			{
+				"cycle"		"0.662502"
+			}
+			"trace"
+			{
+				"cycle"		"0.664169"
+			}
+			"trace"
+			{
+				"cycle"		"0.665836"
+			}
+			"trace"
+			{
+				"cycle"		"0.667502"
+			}
+			"trace"
+			{
+				"cycle"		"0.669169"
+			}
+			"trace"
+			{
+				"cycle"		"0.670836"
+			}
+			"trace"
+			{
+				"cycle"		"0.672502"
+			}
+			"trace"
+			{
+				"cycle"		"0.674169"
+			}
+			"trace"
+			{
+				"cycle"		"0.675836"
+			}
+			"trace"
+			{
+				"cycle"		"0.677502"
+			}
+			"trace"
+			{
+				"cycle"		"0.679169"
+			}
+			"trace"
+			{
+				"cycle"		"0.680836"
+			}
+			"trace"
+			{
+				"cycle"		"0.682503"
+			}
+			"trace"
+			{
+				"cycle"		"0.685002"
+			}
+			"trace"
+			{
+				"cycle"		"0.686669"
+			}
+			"trace"
+			{
+				"cycle"		"0.688336"
+			}
+			"trace"
+			{
+				"cycle"		"0.690002"
+			}
+			"trace"
+			{
+				"cycle"		"0.691669"
+			}
+			"trace"
+			{
+				"cycle"		"0.694169"
+			}
+			"trace"
+			{
+				"cycle"		"0.695836"
+			}
+			"trace"
+			{
+				"cycle"		"0.697503"
+			}
+			"trace"
+			{
+				"cycle"		"0.699169"
+			}
+			"trace"
+			{
+				"cycle"		"0.701669"
+			}
+			"trace"
+			{
+				"cycle"		"0.704170"
+			}
+			"trace"
+			{
+				"cycle"		"0.706669"
+			}
+			"trace"
+			{
+				"cycle"		"0.709170"
+			}
+			"trace"
+			{
+				"cycle"		"0.711669"
+			}
+			"trace"
+			{
+				"cycle"		"0.714170"
+			}
+			"trace"
+			{
+				"cycle"		"0.716670"
+			}
+			"trace"
+			{
+				"cycle"		"0.720003"
+			}
+			"trace"
+			{
+				"cycle"		"0.723336"
+			}
+			"trace"
+			{
+				"cycle"		"0.726670"
+			}
+			"trace"
+			{
+				"cycle"		"0.730837"
+			}
+			"trace"
+			{
+				"cycle"		"0.735003"
+			}
+			"trace"
+			{
+				"cycle"		"0.739170"
+			}
+			"trace"
+			{
+				"cycle"		"0.743337"
+			}
+			"trace"
+			{
+				"cycle"		"0.747503"
+			}
+			"trace"
+			{
+				"cycle"		"0.751670"
+			}
+			"trace"
+			{
+				"cycle"		"0.756670"
+			}
+			"trace"
+			{
+				"cycle"		"0.762504"
+			}
+			"trace"
+			{
+				"cycle"		"0.769170"
+			}
+			"trace"
+			{
+				"cycle"		"0.778337"
 			}
 		}
 	}

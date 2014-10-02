@@ -123,7 +123,7 @@
 
     "blockTech"                         "guard"
 
-    "damagedotproductx"                 "1.4"
+    "damagedotproductx"                 "1.5"
     "multihitscale"                     "0.4"
     "multihitRateForwardX"              "0.038"
     "multihitRateSideX"                 "10.0"  //  never multihit
@@ -140,8 +140,8 @@
 
     "heavydamageX"                      "0.7"
 
-    "mindamagetier1"                    "4"
-    "mindamagetier2"                    "6"
+    "mindamagetier1"                    "2"
+    "mindamagetier2"                    "3"
     "mindamagetier3"                    "8"
 
     "soundswooshfast"                   "Foil.Fast"

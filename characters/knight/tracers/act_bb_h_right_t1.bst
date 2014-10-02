@@ -78,27 +78,7 @@
 			}
 			"trace"
 			{
-				"cycle"		"0.473332"
-			}
-			"trace"
-			{
-				"cycle"		"0.476666"
-			}
-			"trace"
-			{
-				"cycle"		"0.479999"
-			}
-			"trace"
-			{
-				"cycle"		"0.485332"
-			}
-			"trace"
-			{
-				"cycle"		"0.490666"
-			}
-			"trace"
-			{
-				"cycle"		"0.495999"
+				"cycle"		"0.47"
 			}
 		}
 	}
