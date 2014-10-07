@@ -94,21 +94,23 @@ Actions
 		
 		"tier1"
 		{
-			"animation"			"ACT_BB_B_C3_T1"
-			"lock_duration"		"0.5"
-			"damage"			"20"
+			"animation"			"ACT_BB_B_C4_T1"
+			"lock_duration"		"0.6"
+			"damage"			"15"
+			"knockback_scale"	"1.3"
 		}
 		"tier2"
 		{
-			"animation"			"ACT_BB_B_C3_T2"			
+			"animation"			"ACT_BB_B_C4_T1"			
 			"lock_duration"		"0.5"
-			"damage"			"24"
+			"damage"			"20"
+			"knockback_scale"	"1.1"
 		}
 		"tier3"
 		{
-			"animation"			"ACT_BB_B_C3_T3"			
+			"animation"			"ACT_BB_B_C4_T3"			
 			"lock_duration" 	"0.7"
-			"damage"			"28"
+			"damage"			"30"
 		}
 	}
 

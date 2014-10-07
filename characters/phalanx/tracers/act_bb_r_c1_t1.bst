@@ -2,7 +2,7 @@
 {
 	"metadata"
 	{
-		"command"		"bb_tracerrecord Phalanx ACT_BB_R_C1_T1 0.222222 0.4"
+		"command"		"bb_tracerrecord Phalanx ACT_BB_R_C1_T1 0.222222 0.5"
 	}
 	"phalanx"
 	{
@@ -14,15 +14,15 @@
 			}
 			"trace"
 			{
-				"cycle"		"0.237033"
+				"cycle"		"0.237038"
 			}
 			"trace"
 			{
-				"cycle"		"0.251844"
+				"cycle"		"0.251853"
 			}
 			"trace"
 			{
-				"cycle"		"0.271602"
+				"cycle"		"0.271606"
 			}
 			"trace"
 			{
@@ -30,7 +30,7 @@
 			}
 			"trace"
 			{
-				"cycle"		"0.311107"
+				"cycle"		"0.311112"
 			}
 			"trace"
 			{
@@ -38,15 +38,19 @@
 			}
 			"trace"
 			{
-				"cycle"		"0.345675"
+				"cycle"		"0.345680"
 			}
 			"trace"
 			{
-				"cycle"		"0.362955"
+				"cycle"		"0.362964"
 			}
 			"trace"
 			{
-				"cycle"		"0.382712"
+				"cycle"		"0.382717"
+			}
+			"trace"
+			{
+				"cycle"		"0.404938"
 			}
 		}
 	}

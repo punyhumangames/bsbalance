@@ -203,7 +203,7 @@ Actions
     "move_lock"         "1"
     "rotation_lock"     "1"
     "animation_move"    "0"
-    "lock_duration"     "0.25"
+    "lock_duration"     "0.4"
   }
 
   "Parry"

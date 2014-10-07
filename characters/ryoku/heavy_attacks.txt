@@ -24,8 +24,8 @@ Actions
 		{		
 			"animation"			"ACT_BB_H_C1_T1"						
 			"move_lock"			"1"										
-			"lock_duration"		"1.2" 									
-			"damage"			"28"
+			"lock_duration"		"1.0" 									
+			"damage"			"20"
 		}
 		"tier2"
 		{
@@ -66,7 +66,7 @@ Actions
 			"move_lock"			"1"
 			"lock_duration"		"1.0"
 			"damage"			"30"
-			"knockback_scale"	"1"				
+			"knockback_scale"	"0.5"				
 		}
 		"tier3"
 		{
@@ -74,7 +74,7 @@ Actions
 			"move_lock"			"1"										
 			"lock_duration"		"1.0" 																	
 			"damage"			"40"
-			"knockback_scale"	"1"				
+			"knockback_scale"	"0.75"				
 		}
 	}	
 
@@ -99,7 +99,7 @@ Actions
 			"move_lock"			"1"
 			"lock_duration"		"0.6" 
 			"damage"			"30"
-			"knockback_scale"	"1"	
+			"knockback_scale"	"0.5"	
 		}
 		"tier3"
 		{
@@ -107,7 +107,7 @@ Actions
 			"move_lock"			"1"										
 			"lock_duration"		"1.0" 																	
 			"damage"			"40"
-			"knockback_scale"	"1"				
+			"knockback_scale"	"0.75"				
 		}
 	}		
 

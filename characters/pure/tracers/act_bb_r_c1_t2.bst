@@ -2,59 +2,32 @@
 {
 	"metadata"
 	{
-		"command"		"bb_tracerrecord Pure ACT_BB_R_C1_T2 0.1 0.3"
+		"command"		"bb_tracerrecord Pure ACT_BB_R_C1_T2 0.13 0.25"
 	}
 	"pure"
 	{
 		"ACT_BB_R_C1_T2"
 		{
+
 			"trace"
 			{
-				"cycle"		"0.100520"
+				"cycle"		"0.151129"
 			}
 			"trace"
 			{
-				"cycle"		"0.111039"
+				"cycle"		"0.160130"
 			}
 			"trace"
 			{
-				"cycle"		"0.119221"
+				"cycle"		"0.168309"
 			}
 			"trace"
 			{
-				"cycle"		"0.127403"
+				"cycle"		"0.179999"
 			}
 			"trace"
 			{
-				"cycle"		"0.134416"
-			}
-			"trace"
-			{
-				"cycle"		"0.141429"
-			}
-			"trace"
-			{
-				"cycle"		"0.148442"
-			}
-			"trace"
-			{
-				"cycle"		"0.155455"
-			}
-			"trace"
-			{
-				"cycle"		"0.163637"
-			}
-			"trace"
-			{
-				"cycle"		"0.172987"
-			}
-			"trace"
-			{
-				"cycle"		"0.188182"
-			}
-			"trace"
-			{
-				"cycle"		"0.268832"
+				"cycle"		"0.221182"
 			}
 		}
 	}

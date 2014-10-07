@@ -34,15 +34,15 @@ Actions
 
 		"tier1"
 		{
-			"animation"			"ACT_BB_R_C1_T1"						// attack animation activity
-			"lock_duration"		"0.4" 									// can override "lock_duration" above
-			"damage"			"20"
+			"animation"			"ACT_BB_R_C1_T2"
+			"lock_duration"		"0.35"
+			"damage"			"14"
 			"knockback_scale"	"0.5"
 		}
 		"tier2"
 		{
-			"animation"			"ACT_BB_R_C1_T2"
-			"lock_duration"		"0.8"
+			"animation"			"ACT_BB_R_C1_T1"						// attack animation activity
+			"lock_duration"		"0.4" 									// can override "lock_duration" above
 			"damage"			"22"
 			"knockback_scale"	"0.5"
 		}
@@ -162,7 +162,7 @@ Actions
 			"runspeedscale"				".5"
 			"animation_move"			"0"
 			"animation"					"ACT_BB_R_RIGHT_T2"
-			"lock_duration"				"0.8"
+			"lock_duration"				"0.6"
 			"damage"					"4"
 			"knockback_scale"			"0.5"
 			"airspeedscale"				"0.85"

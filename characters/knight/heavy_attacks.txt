@@ -42,13 +42,13 @@ Actions
 		{
 			"animation"			"ACT_BB_H_C1_T2"
 			"lock_duration"		"0.95"
-			"damage"			"60"
+			"damage"			"50"
 		}
 		"tier3"
 		{
 			"animation"			"ACT_BB_H_C1_T3"			
 			"lock_duration" 	"1.1"
-			"damage"			"70"
+			"damage"			"60"
 		}
 	} // end of "Heavy.String1"
 
@@ -69,13 +69,13 @@ Actions
 		{
 			"animation"			"ACT_BB_H_C2_T2"
 			"lock_duration"		"1.0"
-			"damage"			"60"
+			"damage"			"50"
 		}
 		"tier3"
 		{
 			"animation"			"ACT_BB_H_C2_T3"		
 			"lock_duration"		"1.5"
-			"damage"			"70"
+			"damage"			"60"
 		}
 	} // end of "Heavy.String2"
 
@@ -130,14 +130,14 @@ Actions
 		"tier2"
 		{
 			"animation"			"ACT_BB_H_LEFT_T2"
-			"lock_duration"		"1.4"
+			"lock_duration"		"1.15"
 			"damage"			"44"
 		}
 		"tier3"
 		{
 			"animation"			"ACT_BB_H_LEFT_T3"
 			"lock_duration"		"1.95"
-			"damage"			"80"
+			"damage"			"64"
 			"stun_type"			"1"
 		}
 	} // end of "Heavy.Left"
@@ -166,14 +166,14 @@ Actions
 		"tier2"
 		{
 			"animation"			"ACT_BB_H_RIGHT_T2"
-			"lock_duration"		"1.5"
+			"lock_duration"		"1.35"
 			"damage"			"40"
 		}
 		"tier3"
 		{
 			"animation"			"ACT_BB_H_RIGHT_T3"
 			"lock_duration"		"2.2"
-			"damage"			"80"
+			"damage"			"70"
 			"stun_type"			"1"
 		}
 	} // end of "Heavy.Right"	

@@ -38,6 +38,7 @@ Stances
 		{
 			"action" "PhalanxBalancedString1"
 			"action" "PhalanxBalancedString2"
+			"action" "PhalanxBalancedString3"
 		}
 		"facingright" 	"1"
 	}
