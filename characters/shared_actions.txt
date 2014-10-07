@@ -377,7 +377,7 @@ Actions
     "air_move"                "1"
 	"gravity_scale"				"0.12"
 	"air_drag_scale"			"0.9"
-	"lock_duration"				"1.2"
+	"lock_duration"				"1.75"
   }
 
   "WallRun"
