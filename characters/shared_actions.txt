@@ -363,21 +363,21 @@ Actions
     "animation"               "ACT_BB_WALLFLIP"
 
     "air_move"                "1"
-	"gravity_scale"				"0.5"
-	"air_drag_scale"			"0.99"
+    "gravity_scale"           "0.5"
+    "air_drag_scale"          "0.99"
   }
-  
+
   "WallSlide"
   {
     "factoryclass"            "wallslide"
-    "action_upperbody"    "1"
-    "animation_lowerbody"      "ACT_BB_WALLSLIDE"
-    "rotation_lock"     "1"
+    "action_upperbody"        "1"
+    "animation_lowerbody"     "ACT_BB_WALLSLIDE"
+    "rotation_lock"           "1"
 
     "air_move"                "1"
-	"gravity_scale"				"0.12"
-	"air_drag_scale"			"0.9"
-	"lock_duration"				"1.75"
+  "gravity_scale"       "0.12"
+  "air_drag_scale"      "0.9"
+  "lock_duration"       "1.75"
   }
 
   "WallRun"
@@ -404,7 +404,7 @@ Actions
     "air_move"            "1"
     "noclip_move"         "1"
     "rotation_lock"       "1"
-	"action_velocity_impulse"	"0"
+  "action_velocity_impulse" "0"
   }
 
   "Vault"
@@ -451,15 +451,15 @@ Actions
     //"runspeedscale"     "0.5"
     "action_upperbody"    "1"
   }
-  
+
   "GrapplingHook"
   {
     "factoryclass"        "grapplinghook"
-	"animation_pitchaim"	"1"
+  "animation_pitchaim"  "1"
     "action_upperbody"    "1"
     "jump"              "1"
-	"animation_lowerbody"	"ACT_RUN"
-	"override_move"		"4" // MOVETYPE_FLY
+  "animation_lowerbody" "ACT_RUN"
+  "override_move"   "4" // MOVETYPE_FLY
     "rotation_lock"     "0"
   }
 
