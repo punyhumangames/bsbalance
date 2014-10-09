@@ -38,8 +38,9 @@ Actions
 		"tier1"
 		{		
 			"animation"			"ACT_BB_R_C1_T1"						// attack animation activity			
-			"lock_duration"		"0.32" 									// can override "lock_duration" above
-			"damage"			"12"										// damage per hit
+			"lock_duration"		"0.31" 									// can override "lock_duration" above
+			"damage"			"9"								// damage per hit
+			"knockback_scale"		"0.75"
 		}
 		"tier2"
 		{
@@ -65,8 +66,9 @@ Actions
 		"tier1"
 		{		
 			"animation"			"ACT_BB_R_C2_T1"														
-			"lock_duration"		"0.4" 		
-			"damage"			"12"											
+			"lock_duration"		"0.425" 		
+			"damage"			"15"		
+			"knockback_scale"		"0.75"											
 		}
 		"tier2"
 		{
@@ -92,7 +94,7 @@ Actions
 		"tier1"
 		{		
 			"animation"			"ACT_BB_R_C3_T1"														
-			"lock_duration"		"0.6" 	
+			"lock_duration"		"0.7" 	
 			"damage"			"14"			
 		}
 		"tier2"

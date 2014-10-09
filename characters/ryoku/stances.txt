@@ -4,7 +4,6 @@ Stances
 	{
 		"extends"	"reverse"
 
-		"speed"		"1.0" // run speed modifier
 		"damage"	"5"
 		"kb"		"0.09"
 
@@ -75,7 +74,6 @@ Stances
 		"forward" // forward String attacks
 		{
 			"action" "RyokuAirString1"
-			"action" "RyokuAirString2"
 		}
 		
 		"icon"		"vgui/stances/ryoku_air"

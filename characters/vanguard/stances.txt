@@ -1,5 +1,25 @@
 Stances
 {
+	"vanguard.fast"
+	{
+		"extends"		"reverse"
+
+		"forward"
+		{
+			"action" "VanguardFastForward"
+		}
+		"right"					"VanguardFastRight"
+		"left"					"VanguardFastLeft"
+		"forward_left"	"VanguardFastForwardLeft"
+		"forward_right"	"VanguardFastForwardRight"
+		"back_left"			"VanguardFastBackLeft"
+		"back_right"		"VanguardFastBackRight"
+
+		"icon"				"vgui/stances/pure_fast"
+		"rotationspeed"		"200"
+		"facingright"		"1"
+	}
+
 	"vanguard.heavy"
 	{
 		"extends"		"heavy"

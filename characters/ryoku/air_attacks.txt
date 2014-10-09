@@ -31,57 +31,29 @@ Actions
 			"damage"			"32"								
 		}
 	}
-	
+
 	"RyokuAirString1"
 	{
 		"factoryclass"					"attack"
 		"extends"						"RyokuAirBase"
 		"charge_animation"				"ACT_BB_A_C1_CHARGE" // charge animation activity
 		"charge_animation_run"			"ACT_BB_A_C1_CHARGE" // charge animation activity while running
-		"animation_move_duration"		"0.3"
-
-		"tier1"
-		{		
-			"animation"			"ACT_BB_A_C1_T1"						// attack animation activity		
-			"lock_duration"		"0.6" 									// can override "lock_duration" above
-			"damage"			"14"									// damage per hit
-		}
-		"tier2"
-		{
-			"animation"			"ACT_BB_A_C1_T1"
-			"lock_duration"		"0.6" 
-			"damage"			"16"
-		}
-		"tier3"
-		{
-			"animation"			"ACT_BB_A_C1_T1"											
-			"lock_duration"		"0.6"			
-			"damage"			"20"																		
-		}
-	}	
-
-	"RyokuAirString2"
-	{
-		"factoryclass"					"attack"
-		"extends"						"RyokuAirBase"
-		"charge_animation"				"ACT_BB_A_C1_CHARGE" // charge animation activity
-		"charge_animation_run"			"ACT_BB_A_C1_CHARGE" // charge animation activity while running
 		"landing"						"ACT_BB_LAND_DOWN"
-		"animation_move_duration"		"0.3"
+		"animation_move_duration"		"0.1"
 
 		"tier1"
 		{		
 			"animation"			"ACT_BB_A_C2_T1"						// attack animation activity		
 			"lock_duration"		"1.4" 									// can override "lock_duration" above
 			"damage"			"24"									// damage per hit
-			"knockback_scale"	"0.25"
+			"knockback_scale"	"0.75"
 		}
 		"tier2"
 		{
 			"animation"			"ACT_BB_A_C2_T1"
 			"lock_duration"		"1.0"
 			"damage"			"28"									
-			"knockback_scale"	"0.25"
+			"knockback_scale"	"0.50"
 		}
 		"tier3"
 		{
@@ -105,14 +77,14 @@ Actions
 			"animation"			"ACT_BB_A_LEFT_T1"			
 			"damage"			"14"	
 			"lock_duration"		"0.70" 
-			"land_lock_duration"	"0.9"
+			"land_lock_duration"	"0.7"
 			"knockback_scale"	"1.0"
 		}
 		"tier2"
 		{
 			"animation"			"ACT_BB_A_LEFT_T1"
 			"damage"			"18"	
-			"land_lock_duration"	"0.9"
+			"land_lock_duration"	"0.8"
 			"lock_duration"		"1.5" 
 		}
 		"tier3"
@@ -138,7 +110,7 @@ Actions
 			"animation"			"ACT_BB_A_RIGHT_T1"	
 			"damage"			"14"	
 			"lock_duration"		"0.70" 
-			"land_lock_duration"	"0.9"
+			"land_lock_duration"	"0.75"
 			"knockback_scale"	"1.0"
 		}
 		"tier2"
@@ -146,7 +118,7 @@ Actions
 			"animation"			"ACT_BB_A_RIGHT_T1"
 			"damage"			"18"	
 			"lock_duration"		"1.5" 
-			"land_lock_duration"	"0.9"
+			"land_lock_duration"	"0.85"
 		}
 		"tier3"
 		{

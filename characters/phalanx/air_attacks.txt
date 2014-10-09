@@ -50,7 +50,7 @@ Actions
 		{
 			"animation"			"ACT_BB_A_C1_T1"						// attack animation activity
 			"move_lock"			"1"										// can override movement lock; valid values are 0, false, 1, true
-			"land_lock_duration"	"0.5"
+			"land_lock_duration"	"0.4"
 			"lock_duration"		"1.0" 									// can override "lock_duration" above
 			"damage"			"20"										// damage per hit
 		}
@@ -58,14 +58,14 @@ Actions
 		{
 			"animation"			"ACT_BB_A_C1_T1"
 			"lock_duration"		"1.00"
-			"land_lock_duration"	"0.6"
+			"land_lock_duration"	"0.4"
 			"damage"			"24"
 		}
 		"tier3"
 		{
 			"animation"			"ACT_BB_A_C1_T1"
 			"lock_duration"		"1.00"
-			"land_lock_duration"	"1.0"
+			"land_lock_duration"	"0.6"
 			"damage"			"30"
 		}
 	}
@@ -131,7 +131,7 @@ Actions
 		{
 			"animation"			"ACT_BB_A_LEFT_T1"
 			"lock_duration"		"1.00"
-			"land_lock_duration"	"1.00"
+			"land_lock_duration"	"0.65"
 			"damage"			"20"
 		}
 	}
@@ -154,21 +154,21 @@ Actions
 		{
 			"animation"			"ACT_BB_A_RIGHT_T1"
 			"lock_duration"		"1.00"
-			"land_lock_duration"	"0.65"
+			"land_lock_duration"	"0.55"
 			"damage"			"12"
 		}
 		"tier2"
 		{
 			"animation"			"ACT_BB_A_RIGHT_T1"
 			"lock_duration"		"1.00"
-			"land_lock_duration"	"0.75"
+			"land_lock_duration"	"0.60"
 			"damage"			"16"
 		}
 		"tier3"
 		{
 			"animation"			"ACT_BB_A_RIGHT_T1"
 			"lock_duration"		"1.00"
-			"land_lock_duration"	"1.00"
+			"land_lock_duration"	"0.70"
 			"damage"			"20"
 		}
 	}

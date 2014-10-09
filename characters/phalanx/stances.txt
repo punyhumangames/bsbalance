@@ -4,7 +4,6 @@ Stances
 	{
 		"extends"	"reverse"
 
-		"speed"		"1.0" // run speed modifier
 		"damage"	"5"
 		"kb"		"0.06"
 		"rotationspeed"		"100"
@@ -39,6 +38,7 @@ Stances
 		{
 			"action" "PhalanxBalancedString1"
 			"action" "PhalanxBalancedString2"
+			"action" "PhalanxBalancedString3"
 		}
 		"facingright" 	"1"
 	}
