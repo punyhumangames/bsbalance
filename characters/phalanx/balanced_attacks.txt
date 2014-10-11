@@ -97,19 +97,19 @@ Actions
 			"animation"			"ACT_BB_B_C4_T1"
 			"lock_duration"		"0.6"
 			"damage"			"15"
-			"knockback_scale"	"1.3"
+			"knockback_scale"	"1.2"
 		}
 		"tier2"
 		{
 			"animation"			"ACT_BB_B_C4_T1"			
-			"lock_duration"		"0.5"
+			"lock_duration"		"0.7"
 			"damage"			"20"
 			"knockback_scale"	"1.1"
 		}
 		"tier3"
 		{
 			"animation"			"ACT_BB_B_C4_T3"			
-			"lock_duration" 	"0.7"
+			"lock_duration" 	"1.0"
 			"damage"			"30"
 		}
 	}

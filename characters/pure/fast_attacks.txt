@@ -162,9 +162,9 @@ Actions
 			"runspeedscale"				".5"
 			"animation_move"			"0"
 			"animation"					"ACT_BB_R_RIGHT_T2"
-			"lock_duration"				"0.6"
+			"lock_duration"				"0.5"
 			"damage"					"4"
-			"knockback_scale"			"0.5"
+			"knockback_scale"			"1.5"
 			"airspeedscale"				"0.85"
 		}
 		"tier2"
