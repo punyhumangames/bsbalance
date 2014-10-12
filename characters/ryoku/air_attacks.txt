@@ -45,7 +45,7 @@ Actions
 		{		
 			"animation"			"ACT_BB_A_C2_T1"						// attack animation activity		
 			"lock_duration"		"1.4" 									// can override "lock_duration" above
-			"damage"			"24"									// damage per hit
+			"damage"			"17"									// damage per hit
 			"knockback_scale"	"0.75"
 		}
 		"tier2"

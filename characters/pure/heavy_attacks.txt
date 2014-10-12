@@ -78,7 +78,7 @@ Actions
 		}
 		"tier3"
 		{
-			"animation"			"ACT_BB_H_C2_T2"
+			"animation"			"ACT_BB_H_C2_T1"
 			"lock_duration"		"0.8"
 			"knockback_scale"	"0.3"
 			"damage"			"58"
