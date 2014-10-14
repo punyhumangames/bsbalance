@@ -67,6 +67,7 @@ Actions
 			"animation"			"ACT_BB_B_C2_T1"
 			"lock_duration"		"0.8"
 			"damage"			"26"
+			"knockback_scale"	"1.1"	
 		}
 		"tier2"
 		{
