@@ -36,7 +36,7 @@ Actions
 		{
 			"animation"			"ACT_BB_R_C1_T2"
 			"lock_duration"		"0.35"
-			"damage"			"14"
+			"damage"			"12"
 			"knockback_scale"	"0.5"
 		}
 		"tier2"
@@ -66,7 +66,7 @@ Actions
 		{
 			"animation"			"ACT_BB_R_C2_T1"
 			"lock_duration"		"0.45"
-			"damage"			"16"
+			"damage"			"12"
 			"knockback_scale"	"0.5"
 		}
 		"tier2"
