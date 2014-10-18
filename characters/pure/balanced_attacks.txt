@@ -36,7 +36,7 @@ Actions
 		{		
 			"animation"			"ACT_BB_B_C1_T1"						// attack animation activity
 			"lock_duration"		"0.45"									// can override "lock_duration" above
-			"damage"			"24"
+			"damage"			"20"
 			"knockback_scale"	"0.3"	
 		}
 		
@@ -129,7 +129,7 @@ Actions
 			"animation_move"			"0"								
 			"animation"					"ACT_BB_B_LEFT_T1"						
 			"lock_duration"				"1.2" 		
-			"damage"					"24"
+			"damage"					"20"
 			"airspeedscale"				"0.85"
 		}
 		"tier2"
