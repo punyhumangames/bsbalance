@@ -2,32 +2,23 @@
 {
 	"metadata"
 	{
-		"command"		"bb_tracerrecord Pure ACT_BB_R_C1_T2 0.13 0.25"
+		"command"		"bb_tracerrecord Pure ACT_BB_R_C1_T2 0.17 0.27"
 	}
 	"pure"
 	{
 		"ACT_BB_R_C1_T2"
 		{
-
 			"trace"
 			{
-				"cycle"		"0.151129"
+				"cycle"		"0.170649"
 			}
 			"trace"
 			{
-				"cycle"		"0.160130"
+				"cycle"		"0.182338"
 			}
 			"trace"
 			{
-				"cycle"		"0.168309"
-			}
-			"trace"
-			{
-				"cycle"		"0.179999"
-			}
-			"trace"
-			{
-				"cycle"		"0.221182"
+				"cycle"		"0.245455"
 			}
 		}
 	}
