@@ -26,7 +26,7 @@
     "mindamagetier2"                    "0"
     "mindamagetier3"                    "0"
     "interceptTurnSelfX"                "1.0" //how much to turn yourself, multiplied by bb_turnanimation_parry_angle and opponent's interceptTurnOpponentX
-    "interceptTurnOpponentX"            "1.0" //how much to turn opponent, multiplied by bb_turnanimation_parry_angle and opponent's interceptTurnSelfX
+    "interceptTurnOpponentX"            "0.0" //how much to turn opponent, multiplied by bb_turnanimation_parry_angle and opponent's interceptTurnSelfX
     "interceptRecoveryX"                "1.0" //how long a tracer parry recovery takes, multiplied by bb_recovery_tier_worse/normal/better
     "interceptForwardRecoveryX"         "1.0" //as above, but another multiplier for forward attacks
     "interceptSideRecoveryX"            "1.0" //as above, but for side attacks
@@ -73,7 +73,6 @@
     "multihitMinDamage"                 "2"
 
     "knockbackX"                        "1.0"
-    "interceptTurnOpponentX"            "0.0"
 
     "soundswooshfast"                   "Longsword.Fast"
     "soundswooshbalanced"               "Longsword.Balanced"
@@ -103,7 +102,6 @@
     "interruptx"                        "1.15"
 
     "knockbackX"                        "1.5"
-    "interceptTurnOpponentX"            "0.0"
 
     "chargerunx"                        "0.6"
 
@@ -132,7 +130,7 @@
     "sideAttackDamageX"                 "0.6"
 
     "interceptTurnSelfX"                "0.0"
-    "interceptTurnOpponentX"            "0.785"
+    "interceptTurnOpponentX"            "0.75"
     "interceptSideRecoveryX"            "0.15"
     "interceptForwardRecoveryX"         "1.4"
 

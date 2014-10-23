@@ -93,7 +93,7 @@ Actions
 		"tier1"
 		{		
 			"animation"			"ACT_BB_R_C3_T1"														
-			"lock_duration"		"0.7" 	
+			"lock_duration"		"0.58" 	
 			"damage"			"14"			
 		}
 		"tier2"
