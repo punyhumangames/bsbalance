@@ -38,8 +38,9 @@ Actions
 		"extends"						"RyokuAirBase"
 		"charge_animation"				"ACT_BB_A_C1_CHARGE" // charge animation activity
 		"charge_animation_run"			"ACT_BB_A_C1_CHARGE" // charge animation activity while running
-		"landing"						"ACT_BB_LAND_DOWN"
-		"animation_move_duration"		"0.1"
+		"landing"						"ACT_BB_LAND_LEFT"
+		"animation_move_duration"		"0.01"
+		"gravity_scale"		"0.65"
 
 		"tier1"
 		{		

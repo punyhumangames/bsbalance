@@ -7,133 +7,110 @@ Actions
 	"VanguardHeavyBase"
 	{
 		"move_scale"					"1"
-		"move_lock"						"0"
-		"animation_move"			"1"
-		"reaction"						"ACT_BB_STUMBLE_HEAVY"
-		"reaction_layer"			"ACT_HIT_UPPER_HEAVY"
+		"move_lock"					"0"
+		"animation_move"				"1"
+		"reaction"					"ACT_BB_STUMBLE_HEAVY"
+		"reaction_layer"				"ACT_HIT_UPPER_HEAVY"
 		"tier1"
 		{
 			"move_lock"			"0"
-			"damage"				"34"
-			"animation_move_controlled" "1"
 		}
 		"tier2"
 		{
 			"move_lock"			"0"
-			"damage"				"36"
 		}
 		"tier3"
 		{
 			"move_lock"			"0"
-			"damage"				"38"
 		}
 	}
 
-	"VanguardHeavyForward"
+	"VanguardHeavyString1"
 	{
-		"factoryclass"						"attack"
-		"extends"									"VanguardHeavyBase"
-		"charge_animation"				"ACT_IDLE"
-		"charge_animation_run"		"ACT_IDLE"
+		"factoryclass"				"attack"
+		"extends"				"VanguardHeavyBase"
+		"charge_animation"			"ACT_BB_B_C1_CHARGE"
+		"charge_animation_run"			"ACT_BB_B_C1_CHARGE_RUNNING"
+		"move_scale"        	"0.7"
 
 		"tier1"
 		{
-			"animation"								"ACT_BB_H_F_R_T1"
-			"lock_duration"						"1.32"
-			"damage"									"34"
+			"animation"				"ACT_BB_H_C1_T1"
+			"lock_duration"				"1.3"
+			"damage"				"29"
+			"knockback_scale"		"1.2"
 		}
 		"tier2"
 		{
-			"animation"				"ACT_IDLE"
-			"lock_duration"		"1.55"
-			"damage"					"36"
+			"animation"				"ACT_BB_H_C1_T2"
+			"lock_duration"				"1.52"
+			"damage"				"32"
+			
+		}
+		"tier3"
+		{
+			"animation"				"ACT_BB_H_C1_T3"
+			"lock_duration" 			"1.5"
+			"damage"				"46"
+		}
+	}
+
+	"VanguardHeavyLeft"
+	{
+		"factoryclass"				"attack"
+		"extends"				"VanguardHeavyBase"
+		"charge_animation"			"ACT_BB_R_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_LEFT_CHARGE_RUNNING"
+
+		"tier1"
+		{
+			"animation"				"ACT_BB_H_LEFT_T1"
+			"lock_duration"			".7"
+			"damage"				"26"
+		}
+		"tier2"
+		{
+			"animation"				"ACT_BB_H_LEFT_T2"
+			"lock_duration"			".8"
+			"damage"				"36"
 
 		}
 		"tier3"
 		{
-			"animation"				"ACT_IDLE"
-			"lock_duration" 	"1.25"
+			"animation"				"ACT_BB_H_LEFT_T3"
+			"lock_duration" 		".85"
+			"damage"				"40"
 		}
 	}
 
 	"VanguardHeavyRight"
 	{
-		"factoryclass"						"attack"
-		"extends"									"VanguardHeavyBase"
-		"charge_animation"				"ACT_IDLE"
-		"charge_animation_run"		"ACT_IDLE"
+		"factoryclass"				"attack"
+		"extends"				"VanguardHeavyBase"
+		"charge_animation"			"ACT_BB_R_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_R_RIGHT_CHARGE_RUNNING"
 
 		"tier1"
 		{
-			"animation"								"ACT_BB_H_R_T1"
-			"lock_duration"						"1.4"
-			"damage"									"34"
+			"animation"				"ACT_BB_H_RIGHT_T1"
+			"lock_duration"				"0.9"
+			"damage"				"26"
 		}
 		"tier2"
 		{
-			"animation"				"ACT_IDLE"
-			"lock_duration"		"1.55"
-			"damage"					"36"
+			"animation"				"ACT_BB_H_RIGHT_T2"
+			"lock_duration"				"1.1"
+			"damage"				"30"
+			"knockback_scale"		"0.75"
 
 		}
 		"tier3"
 		{
-			"animation"				"ACT_IDLE"
-			"lock_duration" 	"1.25"
-		}
-	}
-
-	"VanguardHeavyForwardLeft"
-	{
-		"factoryclass"						"attack"
-		"extends"									"VanguardHeavyBase"
-		"charge_animation"				"ACT_IDLE"
-		"charge_animation_run"		"ACT_IDLE"
-
-		"tier1"
-		{
-			"animation"								"ACT_BB_H_F_L_T1"
-			"lock_duration"						"1.4"
-			"damage"									"34"
-		}
-		"tier2"
-		{
-			"animation"				"ACT_IDLE"
-			"lock_duration"		"1.55"
-			"damage"					"36"
-
-		}
-		"tier3"
-		{
-			"animation"				"ACT_IDLE"
-			"lock_duration" 	"1.25"
-		}
-	}
-
-	"VanguardHeavyForwardRight"
-	{
-		"factoryclass"						"attack"
-		"extends"									"VanguardHeavyBase"
-		"charge_animation"				"ACT_IDLE"
-		"charge_animation_run"		"ACT_IDLE"
-
-		"tier1"
-		{
-			"animation"								"ACT_BB_H_F_R_T1"
-			"lock_duration"						"1.4"
-			"damage"									"34"
-		}
-		"tier2"
-		{
-			"animation"				"ACT_IDLE"
-			"lock_duration"		"1.55"
-			"damage"					"36"
-
-		}
-		"tier3"
-		{
-			"animation"				"ACT_IDLE"
-			"lock_duration" 	"1.25"
+			"animation"				"ACT_BB_H_RIGHT_T3"
+			"lock_duration" 			"0.87"
+			"damage"				"40"
+			"runspeedscale"				"0.5"
+			"animation_move"			"0"	
 		}
 	}
 }

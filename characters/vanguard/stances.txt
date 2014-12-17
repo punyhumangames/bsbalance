@@ -4,37 +4,80 @@ Stances
 	{
 		"extends"		"reverse"
 
+		"kb"		"0.11"
+
+		"left"	"VanguardFastLeft"
+		"right"	"VanguardFastRight"
 		"forward"
 		{
-			"action" "VanguardFastForward"
+			"action" "VanguardFastString1"
+			"action" "VanguardFastString2"
+			"action" "VanguardFastString3"
 		}
-		"right"					"VanguardFastRight"
-		"left"					"VanguardFastLeft"
-		"forward_left"	"VanguardFastForwardLeft"
-		"forward_right"	"VanguardFastForwardRight"
-		"back_left"			"VanguardFastBackLeft"
-		"back_right"		"VanguardFastBackRight"
+		
+		"icon"		"vgui/stances/vanguard_fast"
+		"rotationspeed"		"300"
+		"facingright"		"0"
+	}
 
-		"icon"				"vgui/stances/pure_fast"
-		"rotationspeed"		"200"
+	"vanguard.balanced"
+	{
+		"extends"	"balanced"
+
+		"kb"		"0.11"
+
+		"left"	"VanguardBalancedLeft"
+		"right"	"VanguardBalancedRight"
+		"forward" // forward String attacks
+		{
+			"action" "VanguardBalancedString1"
+			"action" "VanguardBalancedString2"
+			"action" "VanguardBalancedString3"
+			"action" "VanguardBalancedString4"
+		}
+		
+		"icon"		"vgui/stances/vanguard_balanced"
+		"rotationspeed"		"150"
 		"facingright"		"1"
 	}
 
+	
 	"vanguard.heavy"
 	{
-		"extends"		"heavy"
+		"extends"	"heavy"
+		
+		// animations
 
-		"forward"
+		// actions (see berimbau_actions.txt)
+		"left"	"VanguardHeavyLeft"		// left attack action name
+		"right"	"VanguardHeavyRight"		// right attack action name
+		"forward" // forward String attacks
 		{
-			"action" "VanguardHeavyForward"
+			"action" "VanguardHeavyString1"
 		}
-		"right"					"VanguardHeavyRight"
-		"forward_left"	"VanguardHeavyForwardLeft"
-		"forward_right"	"VanguardHeavyForwardRight"
+		
+		"icon"		"vgui/stances/vanguard_heavy"
+		"rotationspeed"		"50"
+		"facingright"		"0"
+	}
 
-		"icon"				"vgui/stances/pure_heavy"
-		"rotationspeed"		"200"
-		"facingright"		"1"
+	"vanguard.air"
+	{
+		"extends"	"air"
+
+		"kb"		"0.05"	
+		"rotationspeed"		"1000"
+
+		// actions (see berimbau_actions.txt)
+		"left"	"VanguardAirLeft" // left attack action name
+		"right"	"VanguardAirRight" // right attack action name
+		"forward" // forward String attacks
+		{
+			"action" "VanguardAirString1"
+		}
+		
+		"icon"		"vgui/stances/vanguard_air"
+		"facingright"	"1"
 	}
 
 }

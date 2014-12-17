@@ -1,0 +1,148 @@
+////////////////////////////////////////////////////////////////////
+// Vanguard air attacks
+////////////////////////////////////////////////////////////////////	
+
+Actions
+{
+	"VanguardAirBase"
+	{
+		"factoryclass"					"attack"
+		"move_lock"						"1" // movement lock; valid values are 0, false, 1, true
+		"animation_move"				"0"
+		"air_move"						"1"
+		"rotation_lock"					"0" // only this line needs to be changed!
+		"landing"						"ACT_BB_LAND_FORWARD"
+		"reaction"						"ACT_BB_STUMBLE_HEAVY"
+		"reaction_layer"				"ACT_HIT_UPPER_HEAVY"			
+
+		"tier1"
+		{		
+			"move_lock"					"1"
+			"lock_duration"				"1.2"
+			"land_lock_duration" 		"0.5"
+		}
+		"tier2"
+		{
+			"move_lock"					"1"
+			"lock_duration"				"1.1"
+			"land_lock_duration" 		"0.5"
+		}
+		"tier3"
+		{
+			"move_lock"					"1"										
+			"lock_duration"				"1.2"								
+			"land_lock_duration" 		"0.5"								
+		}
+	}
+	
+	"VanguardAirString1"
+	{
+		"factoryclass"					"attack"
+		"extends"						"VanguardAirBase"
+		"charge_animation"				"ACT_BB_A_C1_CHARGE"
+		"charge_animation_run"			"ACT_BB_A_C1_CHARGE"			
+		"landing"						"ACT_BB_LAND_FORWARD"
+		"animation_move"				"1"
+		"animation_move_duration"		"0.35"
+		
+		"tier1"
+		{
+			"animation"			"ACT_BB_A_C1_T1"						
+			"move_lock"			"1"
+			"land_lock_duration"	"0.4"
+			"lock_duration"		"1.0" 									
+			"damage"			"18"	
+			"knockback_scale"	"1.5"					
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_C1_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.4"
+			"damage"			"20"
+			"knockback_scale"	"1.5"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_C1_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.6"
+			"damage"			"25"
+			"knockback_scale"	"2.0"
+		}
+	}	
+
+	"VanguardAirLeft"
+	{
+		"factoryclass"					"attack"
+		"extends"						"VanguardAirBase"
+		"charge_animation"				"ACT_BB_A_LEFT_CHARGE"
+		"charge_animation_run"			"ACT_BB_A_LEFT_CHARGE" 					
+		"landing"						"ACT_BB_LAND_LEFT"
+		"move_lock"						"1"
+		//"animation_move"				"1"
+		"air_move"						"1"
+		"rotation_lock"					"0"
+		"move_scale"					"1.0"
+		"animation_move_duration"		"0.35"
+		
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.4"
+			"damage"			"12"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.5"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_LEFT_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.6"
+			"damage"			"20"
+		}
+	}
+
+	"VanguardAirRight"
+	{
+		"factoryclass"					"attack"
+		"extends"						"VanguardAirBase"
+		"charge_animation"				"ACT_BB_A_RIGHT_CHARGE"
+		"charge_animation_run"			"ACT_BB_A_RIGHT_CHARGE" 
+		"landing"						"ACT_BB_LAND_RIGHT"
+		"move_lock"						"1"
+		//"animation_move"				"1"
+		"air_move"						"1"
+		"move_scale"					"1.0"
+		"animation_move_duration"		"0.4"
+
+		"tier1"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.4"
+			"damage"			"12"
+		}
+		"tier2"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.5"
+			"damage"			"16"
+		}
+		"tier3"
+		{
+			"animation"			"ACT_BB_A_RIGHT_T1"
+			"lock_duration"			"1.00"
+			"land_lock_duration"		"0.6"
+			"damage"			"20"
+		}
+	}
+}

@@ -375,9 +375,20 @@ Actions
     "rotation_lock"           "1"
 
     "air_move"                "1"
-  "gravity_scale"       "0.12"
-  "air_drag_scale"      "0.9"
-  "lock_duration"       "1.75"
+	   "gravity_scale"       "0.12"
+	   "air_drag_scale"      "0.9"
+	   "lock_duration"       "1.75"
+  }
+  
+  "WallTransTo"
+  {
+    "factoryclass"		  "walltransto"
+    "animation"         "ACT_BB_WALLTRANSTO"
+
+    "move_scale"        "1"
+    "animation_move"    "1"
+    "air_move"          "1"
+    "rotation_lock"     "1"
   }
 
   "WallRun"
